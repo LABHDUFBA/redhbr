@@ -16,11 +16,15 @@ link-citations: yes
 description: "Obra colaborativa com scripts e dados da produção intectual brasileira em todos os campos das humanidades coletadas e agrupadas através de técnicas computacionais de extração autoamtizada (web scraping)"
 ---
 
-# Introdução
+# Apresentação
 
 A idéia desta obra foi reunir esforços de diferentes pesquisadores e instituições na elaboração de scripts para coletar automaticamente a produção intelectual dos principais congressos das áreas das humanidades. 
 
 Além disso, nós temos como objetivo enfatizar a importância do desenvolvimento de habilidades computacionais para os pesquisadores das humanidades.
 
-Os scripts e todos os dados estarão disponíveis e poderão ser baixados pelos pesquisadores para a realização de insvestigações dos mais mais variados tipos ampliando, com isso, o conhecimento sobre a produção acadêmica, científica e intectual do Brasil ao longo de décadas. 
+Os scripts e todos os dados estão disponíveis e podem ser baixados pelos pesquisadores para a realização de investigações sobre os mais variados aspectos e ampliar, com isso, o conhecimento sobre a produção acadêmica, científica e intelectual do Brasil das ciências humanas e sociais ao longo de décadas. 
+
+Para o lancamento nós escolhemos o [Dia Internacional das Humanidades Digitais](https://dhcenternet.org/initiatives/day-of-dh/2021) em 29/04/2021.
+
+
 
