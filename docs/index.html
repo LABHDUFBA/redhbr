@@ -4,24 +4,29 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>A Minimal Book Example</title>
-  <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <title>Repositório Digital das Humanidades (PT-BR)</title>
+  <meta name="description" content="Obra colaborativa com scripts e dados da produção intectual brasileira em todos os campos das humanidades coletadas e agrupadas através de técnicas computacionais de extração autoamtizada (web scraping)" />
   <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="A Minimal Book Example" />
+  <meta property="og:title" content="Repositório Digital das Humanidades (PT-BR)" />
   <meta property="og:type" content="book" />
   
   
-  <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <meta property="og:description" content="Obra colaborativa com scripts e dados da produção intectual brasileira em todos os campos das humanidades coletadas e agrupadas através de técnicas computacionais de extração autoamtizada (web scraping)" />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="A Minimal Book Example" />
+  <meta name="twitter:title" content="Repositório Digital das Humanidades (PT-BR)" />
   
-  <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <meta name="twitter:description" content="Obra colaborativa com scripts e dados da produção intectual brasileira em todos os campos das humanidades coletadas e agrupadas através de técnicas computacionais de extração autoamtizada (web scraping)" />
   
 
-<meta name="author" content="Yihui Xie" />
+<meta name="author" content="Leonardo Nascimento" />
+<meta name="author" content="Eric Brasil" />
+<meta name="author" content="Tarssio Barreto" />
+<meta name="author" content="Vítor Mussa" />
+<meta name="author" content="Outro" />
+<meta name="author" content="Outro" />
 
 
 <meta name="date" content="2021-04-24" />
@@ -159,7 +164,7 @@ div.csl-indent {
 <li><a href="./">A Minimal Book Example</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Prerequisites</a></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introdução</a></li>
 <li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Introduction</a></li>
 <li class="chapter" data-level="3" data-path="literature.html"><a href="literature.html"><i class="fa fa-check"></i><b>3</b> Literature</a></li>
 <li class="chapter" data-level="4" data-path="methods.html"><a href="methods.html"><i class="fa fa-check"></i><b>4</b> Methods</a></li>
@@ -182,7 +187,7 @@ div.csl-indent {
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">A Minimal Book Example</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Repositório Digital das Humanidades (PT-BR)</a>
           </h1>
         </div>
 
@@ -191,20 +196,32 @@ div.csl-indent {
 
             <section class="normal" id="section-">
 <div id="header">
-<h1 class="title">A Minimal Book Example</h1>
-<p class="author"><em>Yihui Xie</em></p>
+<h1 class="title">Repositório Digital das Humanidades (PT-BR)</h1>
+<p class="author"><em>Leonardo Nascimento<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></em></p>
+<p class="author"><em>Eric Brasil<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></em></p>
+<p class="author"><em>Tarssio Barreto<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a></em></p>
+<p class="author"><em>Vítor Mussa<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a></em></p>
+<p class="author"><em>Outro<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a></em></p>
+<p class="author"><em>Outro<a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a></em></p>
 <p class="date" style="margin-top: 1.5em;"><em>2021-04-24</em></p>
 </div>
-<div id="prerequisites" class="section level1" number="1">
-<h1><span class="header-section-number">Chapter 1</span> Prerequisites</h1>
-<p>This is a <em>sample</em> book written in <strong>Markdown</strong>. You can use anything that Pandoc’s Markdown supports, e.g., a math equation <span class="math inline">\(a^2 + b^2 = c^2\)</span>.</p>
-<p>The <strong>bookdown</strong> package can be installed from CRAN or Github:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="index.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;bookdown&quot;</span>)</span>
-<span id="cb1-2"><a href="index.html#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># or the development version</span></span>
-<span id="cb1-3"><a href="index.html#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># devtools::install_github(&quot;rstudio/bookdown&quot;)</span></span></code></pre></div>
-<p>Remember each Rmd file contains one and only one chapter, and a chapter is defined by the first-level heading <code>#</code>.</p>
-<p>To compile this example to PDF, you need XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): <a href="https://yihui.org/tinytex/" class="uri">https://yihui.org/tinytex/</a>.</p>
+<div id="introdução" class="section level1" number="1">
+<h1><span class="header-section-number">Chapter 1</span> Introdução</h1>
+<p>A idéia desta obra foi reunir esforços de diferentes pesquisadores e instituições na elaboração de scripts para coletar automaticamente a produção intelectual dos principais congressos das áreas das humanidades.</p>
+<p>Além disso, nós temos como objetivo enfatizar a importância do desenvolvimento de habilidades computacionais para os pesquisadores das humanidades.</p>
+<p>Os scripts e todos os dados estarão disponíveis e poderão ser baixados pelos pesquisadores para a realização de insvestigações dos mais mais variados tipos ampliando, com isso, o conhecimento sobre a produção acadêmica, científica e intectual do Brasil ao longo de décadas.</p>
 
+</div>
+<div class="footnotes">
+<hr />
+<ol start="1">
+<li id="fn1"><p>UFBA - LABHDUFBA, <a href="mailto:leofn@ufba.br" class="email">leofn@ufba.br</a><a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>UNILAB - LABHDUFBA, <a href="mailto:john@example.org" class="email">john@example.org</a><a href="#fnref2" class="footnote-back">↩︎</a></p></li>
+<li id="fn3"><p>LABHDUFBA, <a href="mailto:vmussa@gmail.com" class="email">vmussa@gmail.com</a><a href="#fnref3" class="footnote-back">↩︎</a></p></li>
+<li id="fn4"><p>UFRJ - PPGCS, <a href="mailto:vmussa@gmail.com" class="email">vmussa@gmail.com</a><a href="#fnref4" class="footnote-back">↩︎</a></p></li>
+<li id="fn5"><p>UFRJ - PPGCS, <a href="mailto:vmussa@gmail.com" class="email">vmussa@gmail.com</a><a href="#fnref5" class="footnote-back">↩︎</a></p></li>
+<li id="fn6"><p>UFRJ - PPGCS, <a href="mailto:vmussa@gmail.com" class="email">vmussa@gmail.com</a><a href="#fnref6" class="footnote-back">↩︎</a></p></li>
+</ol>
 </div>
             </section>
 
@@ -263,20 +280,6 @@ gitbook.start({
 });
 </script>
 
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-  (function () {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    var src = "true";
-    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:")
-      if (/^https?:/.test(src))
-        src = src.replace(/^https?:/, '');
-    script.src = src;
-    document.getElementsByTagName("head")[0].appendChild(script);
-  })();
-</script>
 </body>
 
 </html>
