@@ -27,4 +27,9 @@ Os scripts e todos os dados estão disponíveis e podem ser baixados pelos pesqu
 Para o lancamento nós escolhemos o [Dia Internacional das Humanidades Digitais](https://dhcenternet.org/initiatives/day-of-dh/2021) em 29/04/2021.
 
 
+```{r, fig.align="center", echo=FALSE, out.width="50%", fig.cap="Imagem do #dayofdh21"}
+knitr::include_graphics("C:/Users/Leonardo/Desktop/dayofdh.jpg")
+```
+
+
 

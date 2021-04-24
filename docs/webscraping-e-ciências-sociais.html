@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Repositório Digital das Humanidades (PT-BR)</title>
+  <title>2 Webscraping e ciências sociais | Repositório Digital das Humanidades (PT-BR)</title>
   <meta name="description" content="Obra colaborativa com scripts e dados da produção intectual brasileira em todos os campos das humanidades coletadas e agrupadas através de técnicas computacionais de extração autoamtizada (web scraping)" />
   <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Repositório Digital das Humanidades (PT-BR)" />
+  <meta property="og:title" content="2 Webscraping e ciências sociais | Repositório Digital das Humanidades (PT-BR)" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Repositório Digital das Humanidades (PT-BR)" />
+  <meta name="twitter:title" content="2 Webscraping e ciências sociais | Repositório Digital das Humanidades (PT-BR)" />
   
   <meta name="twitter:description" content="Obra colaborativa com scripts e dados da produção intectual brasileira em todos os campos das humanidades coletadas e agrupadas através de técnicas computacionais de extração autoamtizada (web scraping)" />
   
@@ -36,8 +36,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="intro.html"/>
+<link rel="prev" href="index.html"/>
+<link rel="next" href="literature.html"/>
 <script src="libs/header-attrs-2.7/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -165,7 +165,7 @@ div.csl-indent {
 
 <li class="divider"></li>
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Apresentação</a></li>
-<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Introduction</a></li>
+<li class="chapter" data-level="2" data-path="webscraping-e-ciências-sociais.html"><a href="webscraping-e-ciências-sociais.html"><i class="fa fa-check"></i><b>2</b> Webscraping e ciências sociais</a></li>
 <li class="chapter" data-level="3" data-path="literature.html"><a href="literature.html"><i class="fa fa-check"></i><b>3</b> Literature</a></li>
 <li class="chapter" data-level="4" data-path="methods.html"><a href="methods.html"><i class="fa fa-check"></i><b>4</b> Methods</a></li>
 <li class="chapter" data-level="5" data-path="applications.html"><a href="applications.html"><i class="fa fa-check"></i><b>5</b> Applications</a>
@@ -195,48 +195,196 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Repositório Digital das Humanidades (PT-BR)</h1>
-<p class="author"><em>Leonardo Nascimento<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></em></p>
-<p class="author"><em>Eric Brasil<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></em></p>
-<p class="author"><em>Tarssio Barreto<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a></em></p>
-<p class="author"><em>Vítor Mussa<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a></em></p>
-<p class="author"><em>Outro<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a></em></p>
-<p class="author"><em>Outro<a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a></em></p>
-<p class="date" style="margin-top: 1.5em;"><em>2021-04-24</em></p>
-</div>
-<div id="apresentação" class="section level1" number="1">
-<h1><span class="header-section-number">1</span> Apresentação</h1>
-<p>A idéia desta obra foi reunir esforços de diferentes pesquisadores e instituições na elaboração de scripts para coletar automaticamente a produção intelectual dos principais congressos das áreas das humanidades.</p>
-<p>Além disso, nós temos como objetivo enfatizar a importância do desenvolvimento de habilidades computacionais para os pesquisadores das humanidades.</p>
-<p>Os scripts e todos os dados estão disponíveis e podem ser baixados pelos pesquisadores para a realização de investigações sobre os mais variados aspectos e ampliar, com isso, o conhecimento sobre a produção acadêmica, científica e intelectual do Brasil das ciências humanas e sociais ao longo de décadas.</p>
-<p>Para o lancamento nós escolhemos o <a href="https://dhcenternet.org/initiatives/day-of-dh/2021">Dia Internacional das Humanidades Digitais</a> em 29/04/2021.</p>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-1"></span>
-<img src="C:/Users/Leonardo/Desktop/dayofdh.jpg" alt="Imagem do #dayofdh21" width="50%" />
+<div id="webscraping-e-ciências-sociais" class="section level1" number="2">
+<h1><span class="header-section-number">2</span> Webscraping e ciências sociais</h1>
+<p>You can label chapter and section titles using <code>{#label}</code> after them, e.g., we can reference Chapter <a href="#intro"><strong>??</strong></a>. If you do not manually label them, there will be automatic labels anyway, e.g., Chapter <a href="methods.html#methods">4</a>.</p>
+<p>Figures and tables with captions will be placed in <code>figure</code> and <code>table</code> environments, respectively.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="webscraping-e-ciências-sociais.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mar =</span> <span class="fu">c</span>(<span class="dv">4</span>, <span class="dv">4</span>, .<span class="dv">1</span>, .<span class="dv">1</span>))</span>
+<span id="cb1-2"><a href="webscraping-e-ciências-sociais.html#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(pressure, <span class="at">type =</span> <span class="st">&#39;b&#39;</span>, <span class="at">pch =</span> <span class="dv">19</span>)</span></code></pre></div>
+<div class="figure" style="text-align: center"><span id="fig:nice-fig"></span>
+<img src="redhbr_files/figure-html/nice-fig-1.png" alt="Here is a nice figure!" width="80%" />
 <p class="caption">
-Figure 1.1: Imagem do #dayofdh21
+Figure 2.1: Here is a nice figure!
 </p>
 </div>
+<p>Reference a figure by its code chunk label with the <code>fig:</code> prefix, e.g., see Figure <a href="webscraping-e-ciências-sociais.html#fig:nice-fig">2.1</a>. Similarly, you can reference tables generated from <code>knitr::kable()</code>, e.g., see Table <a href="webscraping-e-ciências-sociais.html#tab:nice-tab">2.1</a>.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="webscraping-e-ciências-sociais.html#cb2-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(</span>
+<span id="cb2-2"><a href="webscraping-e-ciências-sociais.html#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">head</span>(iris, <span class="dv">20</span>), <span class="at">caption =</span> <span class="st">&#39;Here is a nice table!&#39;</span>,</span>
+<span id="cb2-3"><a href="webscraping-e-ciências-sociais.html#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">booktabs =</span> <span class="cn">TRUE</span></span>
+<span id="cb2-4"><a href="webscraping-e-ciências-sociais.html#cb2-4" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div>
+<table>
+<caption><span id="tab:nice-tab">Table 2.1: </span>Here is a nice table!</caption>
+<thead>
+<tr class="header">
+<th align="right">Sepal.Length</th>
+<th align="right">Sepal.Width</th>
+<th align="right">Petal.Length</th>
+<th align="right">Petal.Width</th>
+<th align="left">Species</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">5.1</td>
+<td align="right">3.5</td>
+<td align="right">1.4</td>
+<td align="right">0.2</td>
+<td align="left">setosa</td>
+</tr>
+<tr class="even">
+<td align="right">4.9</td>
+<td align="right">3.0</td>
+<td align="right">1.4</td>
+<td align="right">0.2</td>
+<td align="left">setosa</td>
+</tr>
+<tr class="odd">
+<td align="right">4.7</td>
+<td align="right">3.2</td>
+<td align="right">1.3</td>
+<td align="right">0.2</td>
+<td align="left">setosa</td>
+</tr>
+<tr class="even">
+<td align="right">4.6</td>
+<td align="right">3.1</td>
+<td align="right">1.5</td>
+<td align="right">0.2</td>
+<td align="left">setosa</td>
+</tr>
+<tr class="odd">
+<td align="right">5.0</td>
+<td align="right">3.6</td>
+<td align="right">1.4</td>
+<td align="right">0.2</td>
+<td align="left">setosa</td>
+</tr>
+<tr class="even">
+<td align="right">5.4</td>
+<td align="right">3.9</td>
+<td align="right">1.7</td>
+<td align="right">0.4</td>
+<td align="left">setosa</td>
+</tr>
+<tr class="odd">
+<td align="right">4.6</td>
+<td align="right">3.4</td>
+<td align="right">1.4</td>
+<td align="right">0.3</td>
+<td align="left">setosa</td>
+</tr>
+<tr class="even">
+<td align="right">5.0</td>
+<td align="right">3.4</td>
+<td align="right">1.5</td>
+<td align="right">0.2</td>
+<td align="left">setosa</td>
+</tr>
+<tr class="odd">
+<td align="right">4.4</td>
+<td align="right">2.9</td>
+<td align="right">1.4</td>
+<td align="right">0.2</td>
+<td align="left">setosa</td>
+</tr>
+<tr class="even">
+<td align="right">4.9</td>
+<td align="right">3.1</td>
+<td align="right">1.5</td>
+<td align="right">0.1</td>
+<td align="left">setosa</td>
+</tr>
+<tr class="odd">
+<td align="right">5.4</td>
+<td align="right">3.7</td>
+<td align="right">1.5</td>
+<td align="right">0.2</td>
+<td align="left">setosa</td>
+</tr>
+<tr class="even">
+<td align="right">4.8</td>
+<td align="right">3.4</td>
+<td align="right">1.6</td>
+<td align="right">0.2</td>
+<td align="left">setosa</td>
+</tr>
+<tr class="odd">
+<td align="right">4.8</td>
+<td align="right">3.0</td>
+<td align="right">1.4</td>
+<td align="right">0.1</td>
+<td align="left">setosa</td>
+</tr>
+<tr class="even">
+<td align="right">4.3</td>
+<td align="right">3.0</td>
+<td align="right">1.1</td>
+<td align="right">0.1</td>
+<td align="left">setosa</td>
+</tr>
+<tr class="odd">
+<td align="right">5.8</td>
+<td align="right">4.0</td>
+<td align="right">1.2</td>
+<td align="right">0.2</td>
+<td align="left">setosa</td>
+</tr>
+<tr class="even">
+<td align="right">5.7</td>
+<td align="right">4.4</td>
+<td align="right">1.5</td>
+<td align="right">0.4</td>
+<td align="left">setosa</td>
+</tr>
+<tr class="odd">
+<td align="right">5.4</td>
+<td align="right">3.9</td>
+<td align="right">1.3</td>
+<td align="right">0.4</td>
+<td align="left">setosa</td>
+</tr>
+<tr class="even">
+<td align="right">5.1</td>
+<td align="right">3.5</td>
+<td align="right">1.4</td>
+<td align="right">0.3</td>
+<td align="left">setosa</td>
+</tr>
+<tr class="odd">
+<td align="right">5.7</td>
+<td align="right">3.8</td>
+<td align="right">1.7</td>
+<td align="right">0.3</td>
+<td align="left">setosa</td>
+</tr>
+<tr class="even">
+<td align="right">5.1</td>
+<td align="right">3.8</td>
+<td align="right">1.5</td>
+<td align="right">0.3</td>
+<td align="left">setosa</td>
+</tr>
+</tbody>
+</table>
+<p>You can write citations, too. For example, we are using the <strong>bookdown</strong> package <span class="citation">(<a href="#ref-R-bookdown" role="doc-biblioref">Xie 2021</a>)</span> in this sample book, which was built on top of R Markdown and <strong>knitr</strong> <span class="citation">(<a href="#ref-xie2015" role="doc-biblioref">Xie 2015</a>)</span>.</p>
 
 </div>
-<div class="footnotes">
-<hr />
-<ol start="1">
-<li id="fn1"><p>UFBA - LABHDUFBA, <a href="mailto:leofn@ufba.br" class="email">leofn@ufba.br</a><a href="#fnref1" class="footnote-back">↩︎</a></p></li>
-<li id="fn2"><p>UNILAB - LABHDUFBA, <a href="mailto:john@example.org" class="email">john@example.org</a><a href="#fnref2" class="footnote-back">↩︎</a></p></li>
-<li id="fn3"><p>LABHDUFBA, <a href="mailto:vmussa@gmail.com" class="email">vmussa@gmail.com</a><a href="#fnref3" class="footnote-back">↩︎</a></p></li>
-<li id="fn4"><p>UFRJ - PPGCS, <a href="mailto:vmussa@gmail.com" class="email">vmussa@gmail.com</a><a href="#fnref4" class="footnote-back">↩︎</a></p></li>
-<li id="fn5"><p>UFRJ - PPGCS, <a href="mailto:vmussa@gmail.com" class="email">vmussa@gmail.com</a><a href="#fnref5" class="footnote-back">↩︎</a></p></li>
-<li id="fn6"><p>UFRJ - PPGCS, <a href="mailto:vmussa@gmail.com" class="email">vmussa@gmail.com</a><a href="#fnref6" class="footnote-back">↩︎</a></p></li>
-</ol>
+<h3>References</h3>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-xie2015" class="csl-entry">
+Xie, Yihui. 2015. <em>Dynamic Documents with <span>R</span> and Knitr</em>. 2nd ed. Boca Raton, Florida: Chapman; Hall/CRC. <a href="http://yihui.org/knitr/">http://yihui.org/knitr/</a>.
+</div>
+<div id="ref-R-bookdown" class="csl-entry">
+———. 2021. <em>Bookdown: Authoring Books and Technical Documents with r Markdown</em>. <a href="https://CRAN.R-project.org/package=bookdown">https://CRAN.R-project.org/package=bookdown</a>.
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-<a href="intro.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="literature.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
