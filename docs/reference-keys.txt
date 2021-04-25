@@ -1,0 +1,9 @@
+apresentação
+webscraping-e-ciências-sociais
+pré-requisitos
+r-e-rstudio
+python
+anpuh
+anpocs
+compos
+referências
