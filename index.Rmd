@@ -7,7 +7,6 @@ author:
 - Vítor Mussa^[UFRJ - PPGCS, vmussa@gmail.com]
 - Outro^[UFRJ - PPGCS, vmussa@gmail.com]
 - Outro^[UFRJ - PPGCS, vmussa@gmail.com]
-comment: sssssssssssssssss
 date: "`r Sys.Date()`"
 output: pdf_document
 documentclass: book
@@ -48,7 +47,11 @@ Ao compartilhar nas redes, pedimos que usem a hashtag **#dayofdh21**
 
 # Webscraping e ciências sociais
 
-ddddddddddddd
+## Por que automatizar?
+
+## Como começar?
+
+## Prós e contras
 
 # Pré-requisitos
 
@@ -58,17 +61,52 @@ ddddddddddddd
 
 # ANPUH
 
-xxxxxxxxxxxxxxxxxxxxxxxxxxxx
+## O que é ANPUH?
+
+## Script de raspagem
+
+## Dados
 
 # ANPOCS
 
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+## O que é a ANPOCS?
+
+## Script de raspagem
+
+## Dados
 
 # ComPos
 
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+## O que é a Compós?
 
-# Referências
+## Script de raspagem
 
-SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+## Dados
+
+# Referências Bibliográficas
+
+AAAAAAAAAAAAAAA
+
+# Sobre os autores
+
+## Leo
+ 
+## Eric
+
+## Vitor
+
+## Tarssio
+
+## Outro
+
+## Outro
+
+## Ajude o projeto! 
+
+<center>
+
+![bc1qmug7kcrw3kxklca7chy7c344d62gtc8fhqwnkw](C:/Users/Leonardo/Desktop/redhbr/img/btc.png){width=35%}
+
+</center>
+
 

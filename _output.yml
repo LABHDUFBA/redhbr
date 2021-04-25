@@ -7,6 +7,19 @@ bookdown::gitbook:
       after: |
         <li><a href="https://labhdufba.github.io/redhbr/" target="blank">Publicado com o bookdown</a></li>
     download: ["pdf", "epub"]
+    sharing:
+      facebook: no
+      github: yes
+      twitter: yes
+      linkedin: no
+      weibo: no
+      instapaper: no
+      vk: no
+      whatsapp: no
+      all: ['facebook', 'twitter', 'linkedin', 'weibo', 'instapaper']
+    info: yes
+
+
 bookdown::pdf_book:
   includes:
     in_header: preamble.tex
