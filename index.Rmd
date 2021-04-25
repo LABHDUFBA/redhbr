@@ -1,10 +1,10 @@
 --- 
 title: "Repositório Digital das Humanidades (PT-BR)"
 author:
-- Leonardo Nascimento^[UFBA - LABHDUFBA, leofn@ufba.br]
+- Leonardo F. Nascimento^[UFBA - Laboratório de Humanidades Digitais, leofn@ufba.br]
 - Eric Brasil^[UNILAB - LABHDUFBA, john@example.org]
-- Tarssio Barreto^[LABHDUFBA, tarssioesa@gmail.com ]
-- Vítor Mussa^[UFRJ - PPGCS, vmussa@gmail.com]
+- Tarssio Barreto^[UFBA - Laboratório de Humanidades Digitais, tarssioesa@gmail.com ]
+- Vítor Mussa^[UFRJ - PPGA, vmussa@gmail.com]
 - Outro^[UFRJ - PPGCS, vmussa@gmail.com]
 - Outro^[UFRJ - PPGCS, vmussa@gmail.com]
 date: "`r Sys.Date()`"
@@ -15,10 +15,9 @@ bibliography:
 - packages.bib
 biblio-style: apalike
 link-citations: yes
-description: Obra colaborativa com scripts e dados da produção intectual brasileira
-  em todos os campos das humanidades coletadas e agrupadas através de técnicas computacionais
-  de extração autoamtizada (web scraping)
+description: Obra colaborativa com scripts e dados da produção intelectual brasileira em todos os campos das humanidades coletadas e agrupadas através de técnicas computacionais de extração autoamtizada (web scraping)
 site: bookdown::bookdown_site
+
 ---
 
 # Apresentação
@@ -40,7 +39,7 @@ Ao compartilhar nas redes, pedimos que usem a hashtag **#dayofdh21**
 
 <center>
 
-![Símbolo do #dayofdh21](C:/Users/Leonardo/Desktop/redhbr/img/dayofdh.jpg){width=35%}
+![Símbolo do #dayofdh21](./img/dayofdh.jpg){width=35%}
 
 </center>
 
