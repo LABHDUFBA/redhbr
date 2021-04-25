@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Repositório Digital das Humanidades (PT-BR)</title>
+  <meta name="description" content="Obra colaborativa com scripts e dados da produção intectual brasileira em todos os campos das humanidades coletadas e agrupadas através de técnicas computacionais de extração autoamtizada (web scraping)" />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Repositório Digital das Humanidades (PT-BR)" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Obra colaborativa com scripts e dados da produção intectual brasileira em todos os campos das humanidades coletadas e agrupadas através de técnicas computacionais de extração autoamtizada (web scraping)" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Repositório Digital das Humanidades (PT-BR)" />
+  
+  <meta name="twitter:description" content="Obra colaborativa com scripts e dados da produção intectual brasileira em todos os campos das humanidades coletadas e agrupadas através de técnicas computacionais de extração autoamtizada (web scraping)" />
+  
+
+<meta name="author" content="Leonardo Nascimento" />
+<meta name="author" content="Eric Brasil" />
+<meta name="author" content="Tarssio Barreto" />
+<meta name="author" content="Vítor Mussa" />
+<meta name="author" content="Outro" />
+<meta name="author" content="Outro" />
+
+
+<meta name="date" content="2021-04-24" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+
+<link rel="next" href="webscraping-e-ciências-sociais.html"/>
+<script src="libs/header-attrs-2.7/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Repositório Digital das Humanidades (PT-BR)</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Apresentação</a></li>
+<li class="chapter" data-level="2" data-path="webscraping-e-ciências-sociais.html"><a href="webscraping-e-ciências-sociais.html"><i class="fa fa-check"></i><b>2</b> Webscraping e ciências sociais</a></li>
+<li class="chapter" data-level="3" data-path="pré-requisitos.html"><a href="pré-requisitos.html"><i class="fa fa-check"></i><b>3</b> Pré-requisitos</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="pré-requisitos.html"><a href="pré-requisitos.html#r-e-rstudio"><i class="fa fa-check"></i><b>3.1</b> R e Rstudio</a></li>
+<li class="chapter" data-level="3.2" data-path="pré-requisitos.html"><a href="pré-requisitos.html#python"><i class="fa fa-check"></i><b>3.2</b> Python</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="anpuh.html"><a href="anpuh.html"><i class="fa fa-check"></i><b>4</b> ANPUH</a></li>
+<li class="chapter" data-level="5" data-path="anpocs.html"><a href="anpocs.html"><i class="fa fa-check"></i><b>5</b> ANPOCS</a></li>
+<li class="chapter" data-level="6" data-path="compos.html"><a href="compos.html"><i class="fa fa-check"></i><b>6</b> ComPos</a></li>
+<li class="chapter" data-level="7" data-path="referências.html"><a href="referências.html"><i class="fa fa-check"></i><b>7</b> Referências</a></li>
+<li class="divider"></li>
+<li><a href="https://labhdufba.github.io/redhbr/" target="blank">Publicado com o bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Repositório Digital das Humanidades (PT-BR)</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="header">
+<h1 class="title">Repositório Digital das Humanidades (PT-BR)</h1>
+<p class="author"><em>Leonardo Nascimento<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></em></p>
+<p class="author"><em>Eric Brasil<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></em></p>
+<p class="author"><em>Tarssio Barreto<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a></em></p>
+<p class="author"><em>Vítor Mussa<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a></em></p>
+<p class="author"><em>Outro<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a></em></p>
+<p class="author"><em>Outro<a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a></em></p>
+<p class="date" style="margin-top: 1.5em;"><em>2021-04-24</em></p>
+</div>
+<div id="apresentação" class="section level1" number="1">
+<h1><span class="header-section-number">1</span> Apresentação</h1>
+<style>
+body {
+text-align: justify}
+</style>
+<p>A idéia desta obra foi reunir esforços de diferentes pesquisadores e instituições na elaboração de scripts para coletar - de modo automatizado - a produção intelectual dos principais congressos e eventos das áreas das humanidades.</p>
+<p>Além disso, nós tivemos como objetivo mais amplo enfatizar a importância do desenvolvimento de habilidades computacionais por parte dos pesquisadores em todos os campos das humanidades.</p>
+<p>Os scripts, as bases de dados e todos os documentos estão disponíveis e poderão ser baixados com apenas um clique. O acervo servirá para a realização de investigações sobre os mais variados aspectos e ampliar, com isso, o conhecimento sobre a produção acadêmica, científica e intelectual do Brasil das ciências humanas e sociais ao longo de décadas.</p>
+<p>Para o lancamento, nós escolhemos o <a href="https://dhcenternet.org/initiatives/day-of-dh/2021">Dia Internacional das Humanidades Digitais</a> em 29/04/2021.</p>
+<p>Ao compartilhar nas redes, pedimos que usem a hashtag <strong>#dayofdh21</strong></p>
+<center>
+<div class="figure">
+<img src="C:/Users/Leonardo/Desktop/dayofdh.jpg" style="width:35.0%" alt="" />
+<p class="caption">Símbolo do #dayofdh21</p>
+</div>
+</center>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="1">
+<li id="fn1"><p>UFBA - LABHDUFBA, <a href="mailto:leofn@ufba.br" class="email">leofn@ufba.br</a><a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>UNILAB - LABHDUFBA, <a href="mailto:john@example.org" class="email">john@example.org</a><a href="#fnref2" class="footnote-back">↩︎</a></p></li>
+<li id="fn3"><p>LABHDUFBA, <a href="mailto:tarssioesa@gmail.com" class="email">tarssioesa@gmail.com</a> <a href="#fnref3" class="footnote-back">↩︎</a></p></li>
+<li id="fn4"><p>UFRJ - PPGCS, <a href="mailto:vmussa@gmail.com" class="email">vmussa@gmail.com</a><a href="#fnref4" class="footnote-back">↩︎</a></p></li>
+<li id="fn5"><p>UFRJ - PPGCS, <a href="mailto:vmussa@gmail.com" class="email">vmussa@gmail.com</a><a href="#fnref5" class="footnote-back">↩︎</a></p></li>
+<li id="fn6"><p>UFRJ - PPGCS, <a href="mailto:vmussa@gmail.com" class="email">vmussa@gmail.com</a><a href="#fnref6" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+
+<a href="webscraping-e-ciências-sociais.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["redhbr.pdf", "redhbr.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
