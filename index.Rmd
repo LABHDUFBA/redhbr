@@ -27,7 +27,7 @@ body {
 text-align: justify}
 </style>
 
-A idéia desta obra foi reunir esforços de diferentes pesquisadores e instituições na elaboração de scripts para coletar - de modo automatizado - a produção intelectual dos principais congressos e eventos das áreas das humanidades. 
+A ideia desta obra foi reunir esforços de diferentes pesquisadores e instituições na elaboração de scripts para coletar - de modo automatizado - a produção intelectual dos principais congressos e eventos das áreas das humanidades. 
 
 Além disso, nós tivemos como objetivo mais amplo enfatizar a importância do desenvolvimento de habilidades computacionais por parte dos pesquisadores em todos os campos das humanidades.
 
@@ -61,7 +61,7 @@ Ao compartilhar nas redes, pedimos que usem a hashtag **#dayofdh21**
 # ANPUH
 
 ## O que é ANPUH?
-A [Associação Nacional de História, Anpuh](https://anpuh.org.br/index.php), fundada em 1961, inicialmente destinada aos docentes de cursos de graduação e pós-graduação. Em 1993, a ANPUH ampliou sua base para todoa os profissionais de história.
+
 A [Associação Nacional de História, Anpuh](https://anpuh.org.br/index.php), fundada em 1961, inicialmente destinada aos docentes de cursos de graduação e pós-graduação. Em 1993, a ANPUH ampliou sua base para todoa os profissionais de história.
 
 >A cada dois anos, a ANPUH realiza o Simpósio Nacional de História, o maior e mais importante evento da área de história no país e na América Latina^[[Anpuh-Quem somos](https://anpuh.org.br/index.php/quem-somos)].
@@ -72,23 +72,81 @@ Desenvolvemos scripts diferentes para dois tipos de conjuntos de dados relaciona
 
 - anpuh-scraper: script para raspagem dos resumos (e demais informações) de todos os trabalhos aprovados para todos os simpósios temáticos dos SNH nos aos de 2013, 2015, 2017 e 2019.
 
+## Anais-Anpuh
+
+[Clique aqui para acessar o repositório no Github](https://github.com/LABHDUFBA/Anais-Anpuh).
+
+### Scripts de raspagem
+
+Esse script realiza a raspagem dos trabalhos em PDF de todos os Simpósios Nacionais da Anpuh entre 1963 até 2017, disponíveis atualmente na site da associação, que podem ser [acessados aqui](https://anpuh.org.br/index.php/documentos/anais).
+
+Escrito em [Python 3.8](https://www.python.org/), o script utiliza as seguintes bibliotecas e módulos
+
+- **urllib.requests**: módulo do Python para acessar urls. [Saiba mais.](https://docs.python.org/pt-br/3/library/urllib.request.htmll)
+- **os**: módulo do Python que permite manipular funções do sistema operacional. [Saiba mais.](https://docs.python.org/pt-br/3/library/os.html)
+- **bs4**: [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) é uma biblioteca Python para extrair  dados de arquivos HTML e XML.
+- **re**: [Regular Expressions](https://docs.python.org/pt-br/3/library/re.html) é um módulo do Python para operar com expressões regulares.
+- **pandas**: [Pandas](https://pandas.pydata.org/) é uma biblioteca escrita em Python para manipulação e análise de dados.
+- **wget**: [Wget](https://pypi.org/project/wget/) é uma biblioteca escrita em Python para realizar downloads. 
+
+O script tem o seguinte funcionamento quando executado:
+
+- Cria pasta para salvar os PDFs, após verificar se a mesma não existe no local: `Anais Anpuh> pdf` utilizando módulo `os`.
+- Acessa a URL dos Anais com a biblioteca `urllib` e realiza a análise do HTML da mesma com a biblioteca `BeautifulSoup`;
+- Cria uma lista de eventos a partir da página principal;
+- Acessa as páginas de cada evento contidas na lista criada anteriormente através de uma iteração;
+- Em cada item da lista de eventos, o script busca todos os papers da primeira página e cria uma nova lista. Nessa lista de papers de uma dada página o script realizará as seguintes ações:
+	- encontrar as informações de cada paper;
+	- inclui essas informações em uma lista (que depois gerará um CSV com os dados);
+	- busca se há pdf disponível e se ele não é repetido faz download do PDF
+	- Após realizar essas ações para todos os itens de uma página, busca a próxima página de papers do evento, se não houver, passa para o próximo evento e repete as ações em um _loop_ até o último evento disponível.
+
 ### Dados
- 
+
 O script retorna para o usuário **todos os pdfs disponíveis em todas as páginas de todos os Simpósios Nacionais da Anpuh desde 1963 até 2017**. São criadas pastas com o número de cada evento para o armazenamento dos arquivos em PDF.
- 
 
 <p align="center"><img src="https://github.com/ericbrasiln/Anais-Anpuh/blob/master/images/pastas.png"/></p>
 
 É importante notar que muitos papers não estão com pdf disponível no site, assim como nas edições mais antigas encontramos arquivos que contém vários papers num único PDF.
- 
+
 O script também gera um arquivo **CSV** (*comma-separated values*) contendo os seguintes valores para cada paper: Autor(es)/Instituições,Título, Tipo, Evento, Ano, Link do Arquivo. Esse arquivo pode ser aberto como uma planilha e trabalhado em banco de dados.
- 
 
-![exemplo de csv](https://github.com/ericbrasiln/Anais-Anpuh/blob/master/images/exemplo-csv.png)
+![exemplo do csv](https://github.com/ericbrasiln/Anais-Anpuh/blob/master/images/exemplo-csv.png)
 
-O script está funcionando perfeitamente. Qualquer alteração no site percebida pelos usuários ou sugestões de aprimoramento são bem vindas.
- 
+## anpuh-scraper
+
+[Clique aqui para acessar o repositório no Github](https://github.com/LABHDUFBA/anpuh-scraper).
+
+### Scripts de raspagem
+
+*Raspador dos resumos dos Simpósios Nacionais de História da [Associação Nacional de História - Anpuh](https://anpuh.org.br). O programa raspa todos os resumos dos SNH 27, 28, 29 e 30, respectivamente dos anos de 2013, 2015, 2017 e 2019*
+Escrito em [Python 3.8](https://www.python.org/), o script utiliza as seguintes bibliotecas e módulos
+
+- **urllib.requests**: módulo do Python que ajuda a acessar urls.
+[Saiba mais.](https://docs.python.org/pt-br/3/library/urllib.request.htmll)
+- **bs4**: [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) é uma biblioteca Python para extrair  dados de arquivos HTML e XML.
+- **pandas**: [Pandas](https://pandas.pydata.org/) é uma biblioteca escrita em Python para manipulação e análise de dados. 
+
+O script tem o seguinte funcionamento quando executado:
+
+Pergunta ao usuário que ano pretende raspar e se deseja incluir um novo ano à lista. 
+Após a criação da lista com os anos escolhidos pelo usuário, o script acessa cada uma das páginas com as listas dos STs nos sites de cada evento;
+Acessa cada ST, encontra os dados de todos os resumos e passa para o ST seguinte;
+Após terminar um ST, passa para o próximo evento e executa as mesmas função;
+Todos os dados são inseridos em um DataFrame em Pandas e ao final são salvos no formato CSV.
+
 ### Dados
+
+O script retorna para o usuário um **CSV (*comma-separated values*) com os dados de todos os trabalhos aceitos nos Simpósio Temáticos dos SNH 27, 28, 29 e 30**.
+
+O CSV contém as seguintes variáveis para cada resumo:
+
+`Ano, Evento, Cidade, ST, Coordenadores, Autor(es)/Instituições, Título, Resumo`
+
+Esse arquivo pode ser aberto como uma planilha e trabalhado em banco de dados.
+
+![exemplo de csv](ex_csv.png)
+
 
 # ANPOCS
 
@@ -114,7 +172,23 @@ AAAAAAAAAAAAAAA
 
 ## Leo
  
-## Eric
+## Eric Brasil (IHLM/UNILAB)
+
+Professor do curso de licenciatura em História e professor do Bacharelado Interdisciplinar em Humanidades no Instituto de Humanidades e Letras da Universidade da Integração Internacional da Lusofonia Afro-brasileira (IHL-UNILAB), campus dos Malês, Bahia. 
+
+Autor do livro A Corte em Festa: experiências negras em carnavais do Rio de Janeiro (1879-1888) (Editora Prismas, 2016). 
+Doutor (2016) e Mestre (2011) pelo Programa de Pós-Graduação em História Social da Universidade Federal Fluminense. 
+
+Vencedor do primeiro lugar no Concurso de Monografias Silvio Romero de 2011 e do segundo lugar em 2020, promovido pelo Centro Nacional de Folclore e Cultura Popular. 
+
+Pesquisador do Laboratório de Humanidades Digitais da UFBA. Membro do GT Nacional Emancipações e Pós-Abolição da Anpuh. 
+Tem experiência na área de História Social da Cultura, Humanidades e História Digital, Abolição da escravidão e o Pós-Abolição no Brasil e no Caribe, atuando principalmente nos seguintes temas: Carnaval, Cidadania, História Transnacional, Diáspora Africana, História das Afro-Américas, Hemerotecas e arquivos digitais, métodos digitais de pesquisa, linguagem de programação para a pesquisa em História, web scraping. 
+
+Foi professor de ensino fundamental, médio e pré-vestibular no Rio de Janeiro entre 2007 e 2017.
+
+Currículos e redes acadêmicas
+
+[Webpage](https://ericbrasiln.github.io) - [Lattes](http://lattes.cnpq.br/6853705640900524) - [Orcid]("https://orcid.org/0000-0001-5067-8475) - [ResearchGate](https://www.researchgate.net/profile/Eric_Brasil) - [Academia.edu](https://unilab.academia.edu/EricBrasil)
 
 ## Vitor
 
