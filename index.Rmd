@@ -258,7 +258,15 @@ Currículos e redes acadêmicas
 
 [Lattes](http://lattes.cnpq.br/9834413442426550) - [LinkedIn](https://www.linkedin.com/in/daniel-mendes-251212176/) - [Twitter](https://twitter.com/danielmnds34)
 
-## Outro
+## Gabriel Andrade (LABHDUFBA/UFBA)
+
+Graduando no curso de Bacharelado em Engenharia de Computação da Escola Politécnica da Universidade Federal da Bahia (UFBA)
+
+É desenvolvedor de software e membro do Laboratório de Humanidades Digitais da Universidade Federal da Bahia ([LABHD-UFBA](http://www.labhd.ufba.br/)).
+
+Currículos e redes acadêmicas
+
+[Webpage](https://gabrielsandrade.github.io) - [Lattes](http://lattes.cnpq.br/4915378425369073) - [LinkedIn](https://www.linkedin.com/in/gabriel-andrade-633996108) - [Twitter](https://twitter.com/ga_brieell_)
 
 ## Ajude o projeto! 
 
