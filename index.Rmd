@@ -4,8 +4,8 @@ author:
 - Leonardo F. Nascimento^[UFBA - Laboratório de Humanidades Digitais, leofn@ufba.br]
 - Eric Brasil^[UNILAB - LABHDUFBA, profericbrasil@unilab.edu.br]
 - Tarssio Barreto^[UFBA - Laboratório de Humanidades Digitais, tarssioesa@gmail.com ]
-- Vítor Mussa^[UFRJ - PPGA, vmussa@gmail.com]
-- Outro^[UFRJ - PPGCS, vmussa@gmail.com]
+- Vítor Mussa^[UFRJ/PPGSA/DTA - LABHDUFBA, vtrmussa@gmail.com]
+- Daniel Mendes^[UFRJ - PATHS, daniel_mnds34@hotmail.com]
 - Outro^[UFRJ - PPGCS, vmussa@gmail.com]
 date: "`r Sys.Date()`"
 output: pdf_document
@@ -152,9 +152,56 @@ Esse arquivo pode ser aberto como uma planilha e trabalhado em banco de dados.
 
 ## O que é a ANPOCS?
 
+A [Associação Nacional de Pós-Graduação e Pesquisa em Ciências Sociais (ANPOCS)](http://anpocs.com/) é uma entidade de direito privado sem fins lucrativos que reúne centenas de centros de pós-graduação e de pesquisa em antropologia, ciência política, relações internacionais e sociologia de todo o Brasil. Ela é formada, portanto, por instituições, em vez de pesquisadores individuais.
+
+A associação organiza os _Encontros Anuais da ANPOCS_, que consistem em congressos cujo número médio de participantes é de 1500 pesquisadores. Esses encontros estão entre os fóruns mais relevantes para as ciências sociais no Brasil.
+
+Diante disso, desenvolvemos o `anpocs-scraper` – [disponível aqui](https://github.com/vmussa/anpocs-scraper) –, um raspador que permite coletar de forma automatizada os dados dos resumos dos trabalhos apresentados nos encontros de 2019, 2020 e, futuramente, 2021. O raspador expressa mais uma iniciativa que busca contribuir para uma ciência aberta e transparente, facilitando o acesso aos dados dos congressos e contribuindo para a preservação da memória das ciências sociais brasileiras.
+
 ## Script de raspagem
 
+### anpocs-scraper
+
+![](img/demo.gif "Demonstração do anpocs-scraper.")
+
+O `anpocs-scraper` é um raspador dos dados dos [Encontros Anuais da ANPOCS](http://anpocs.com/index.php/encontros/apresentacao) escrito em Python. Atualmente o código permite coletar:
+
+* os dados de todos os resumos dos trabalhos apresentados em GT's e SPG's do [44º Encontro Anual da ANPOCS](https://www.anpocs2020.sinteseeventos.com.br/)
+
+* os dados de todos os resumos dos trabalhos apresentados em ST's e SPG's do [43º Encontro Anual da ANPOCS](http://anpocs.com/index.php/43-encontro-anual-2019/2750-encontros-anuais/43-encontro/2301-resumos-sts-e-spgs)
+
+### Instalação e modo de uso
+
+Para instalar o raspador basta clonar o repositório, [que se encontra aqui](https://github.com/vmussa/anpocs-scraper), e instalar suas dependências:
+
+```
+git clone https://github.com/vmussa/anpocs-scraper
+cd anpocs-scraper
+python -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+Para rodar o raspador, continue no repositório clonado e execute o código `main.py` com o Python:
+
+```
+python src/main.py
+```
+
+> Atenção &#8594; **para realizar esse procedimento, você precisa instalar o Google Chrome e o ChromeDriver**: [Clique aqui](https://chromedriver.chromium.org/getting-started) para ler um tutorial sobre como instalar o ChromeDriver.
+
+### Em breve
+
+Futuramente o raspador abarcará todos os GT's e SPG's do encontro 45, cujos resumos dos trabalhos estarão disponíveis [aqui](https://www.anpocs2021.sinteseeventos.com.br/). Além disso, ele contará com um módulo de limpeza dos dados que fará o pré-processamento para a análise qualitativa e/ou computacional.
+
 ## Dados
+
+O programa exporta, para cada edição do congresso, uma tabela no formato CSV com as seguintes informações de cada trabalho apresentado:
+
+> `autores`, `titulo`, `resumo`, `sessao`, `id_evento`
+
+A imagem abaixo ilustra o formato de uma das tabelas:
+
+![](img\anpocs_scraper_csv.png)
 
 # ComPos
 
@@ -190,11 +237,27 @@ Currículos e redes acadêmicas
 
 [Webpage](https://ericbrasiln.github.io) - [Lattes](http://lattes.cnpq.br/6853705640900524) - [Orcid]("https://orcid.org/0000-0001-5067-8475) - [ResearchGate](https://www.researchgate.net/profile/Eric_Brasil) - [Academia.edu](https://unilab.academia.edu/EricBrasil)
 
-## Vitor
+## Vítor Mussa (DTA/PPGSA/UFRJ e LABHDUFBA/UFBA)
+
+Mestrando do Programa de Pós-Graduação em Sociologia e Antropologia (PPGSA) da Universidade Federal do Rio de Janeiro (UFRJ).
+
+É membro do grupo de pesquisa Desenvolvimento, Trabalho e Ambiente ([DTA-UFRJ](https://www.nucleodta.org/inicio)) e do Laboratório de Humanidades Digitais da Universidade Federal da Bahia ([LABHD-UFBA](http://www.labhd.ufba.br/)).
+
+Currículos e redes acadêmicas
+
+[Webpage](https://vmussa.github.io) - [Lattes](http://lattes.cnpq.br/2934187748254130) - [ResearchGate](https://www.researchgate.net/profile/Vitor-Mussa-2) - [LinkedIn](https://www.linkedin.com/in/vmussa/) - [Twitter](https://twitter.com/vitormussa)
 
 ## Tarssio
 
-## Outro
+## Daniel Mendes (PATHS/UFRJ)
+
+Graduando no curso de Bacharelado em Ciências Sociais do Instituto de Filosofia e Ciências Sociais (IFCS) da Universidade Federal do Rio de Janeiro (UFRJ).
+
+É membro do grupo de pesquisa Núcleo de Pesquisa em Estratificação e Trajetórias Sociais ([PATHS](https://www.facebook.com/paths.research/)).
+
+Currículos e redes acadêmicas
+
+[Lattes](http://lattes.cnpq.br/9834413442426550) - [LinkedIn](https://www.linkedin.com/in/daniel-mendes-251212176/) - [Twitter](https://twitter.com/danielmnds34)
 
 ## Outro
 
