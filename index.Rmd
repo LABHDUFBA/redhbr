@@ -105,13 +105,13 @@ O script tem o seguinte funcionamento quando executado:
 
 O script retorna para o usuário **todos os pdfs disponíveis em todas as páginas de todos os Simpósios Nacionais da Anpuh desde 1963 até 2017**. São criadas pastas com o número de cada evento para o armazenamento dos arquivos em PDF.
 
-<p align="center"><img src="https://github.com/ericbrasiln/Anais-Anpuh/blob/master/images/pastas.png"/></p>
+![](img/pastas.png)
 
 É importante notar que muitos papers não estão com pdf disponível no site, assim como nas edições mais antigas encontramos arquivos que contém vários papers num único PDF.
 
 O script também gera um arquivo **CSV** (*comma-separated values*) contendo os seguintes valores para cada paper: Autor(es)/Instituições,Título, Tipo, Evento, Ano, Link do Arquivo. Esse arquivo pode ser aberto como uma planilha e trabalhado em banco de dados.
 
-![exemplo do csv](https://github.com/ericbrasiln/Anais-Anpuh/blob/master/images/exemplo-csv.png)
+![](img/ex_csv1.png)
 
 ## anpuh-scraper
 
@@ -145,8 +145,7 @@ O CSV contém as seguintes variáveis para cada resumo:
 
 Esse arquivo pode ser aberto como uma planilha e trabalhado em banco de dados.
 
-![exemplo de csv](ex_csv.png)
-
+![](img/ex_csv2.png)
 
 # ANPOCS
 
