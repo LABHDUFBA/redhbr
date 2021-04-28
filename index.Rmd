@@ -1,5 +1,7 @@
 --- 
-title: "Repositório Digital das Humanidades (PT-BR)"
+title: |
+      
+      ![](./img/logo.jpg){width=100%}
 author:
 - Leonardo F. Nascimento^[UFBA/ICTI/LABHDUFBA/PPGCS, leofn@ufba.br]
 - Eric Brasil^[UNILAB - LABHDUFBA, profericbrasil@unilab.edu.br]
