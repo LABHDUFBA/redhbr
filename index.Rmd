@@ -44,26 +44,96 @@ Ao compartilhar nas redes, pedimos que usem a hashtag **#dayofdh21**
 </center>
 
 
-# Webscraping e ciências sociais
+# 2 Webscraping e ciências sociais
 
-## Por que automatizar?
+## 2.1 Por que automatizar?
 
-A dataficação e a digitalização se tornaram fenomenos massivos das sociedades contemporâneas. Ao interargirmos com as tecnologias digitais nós deixamos traços de dados que podem ser usados para a pesquisa sobre a sociedade. O desafio colocado para os pesquisadores das humanidades está em acessar e manipular tais dados:
+A dataficação e a digitalização tornaram-se fenomenos massivos das sociedades contemporâneas. Ao interargirmos com as tecnologias digitais nós deixamos traços de dados que podem ser usados para a pesquisa sobre a sociedade. O desafio colocado para os pesquisadores das humanidades está em acessar e manipular tais dados:
 
-> "Como uma técnica de extração de dados online, o [webscraping] parece de interesse especial para nós porque é uma parte importante do que torna a pesquisa social digital praticamente possível". [(MARRES, N. & WELTEVREDE, E. Scraping the Social? Journal of Cultural Economy, v. 6, n. 3, p. 313–335, 1 ago. 2013, p.317)](https://www.tandfonline.com/doi/abs/10.1080/17530350.2013.772070)
+> “Como uma técnica de extração de dados online, o [webscraping] parece de interesse especial para nós porque é uma parte importante do que torna a pesquisa social digital praticamente possível.” [(MARRES, N. & WELTEVREDE, E. Scraping the Social? Journal of Cultural Economy, v. 6, n. 3, p. 313–335, 1 ago. 2013, p.317)](https://www.tandfonline.com/doi/abs/10.1080/17530350.2013.772070)
 
+O volume, quantidade e qualidade dos dados digitais e digitalizados nunca foi tão grande. O acesso à fontes digitalizadas através de mecanismos de busca por palavras-chave, por assuntos, por metadatos em geral, os milhares de dados produzidos a cada segundo nas redes sociais ou o volume de publicações acadêmicas têm impactado as pesquisas e a própria construção do conhecimento nas ciências humanas e sociais.
 
-## Como começar?
+Assim, é urgente a necessidade de enfrentarmos os desafios metodológicos e teóricos colocados por esse cenário. A automatização na coleta de dados na Web não é apenas uma forma de acelarar essa relação do pequisador com os dados, mas de qualificar e potencializar a tarefa heurística de seleção dos mesmos. 
 
-É preciso aprender algum tipo de linguagem de programação (geralmente R ou Python), além de conhecimentos em HTML, CSS e XPATH. Sabemos que, à primeira vista, parecem ser termos complicados para quem vem "de humanas" mas garantimos que o entendimento destas coisas é relativamente mais simples que muitas das leituras que nós fazemos. 
+## 2.2 Como começar?
 
-## Webscraping enquanto técnica das humanidades
+É preciso aprender algum tipo de linguagem de programação (geralmente R ou Python), além de conhecimentos em HTML, CSS e XPATH. Sabemos que, à primeira vista, parecem ser termos complicados para quem vem "das humanas", mas o entendimento destas coisas é relativamente mais simples que muitas das leituras que nós fazemos. 
 
-Ao realizarmos um webscraping é preciso atentar para os procedimentos não apenas "técnicos" envolvidos na raspagem mas, também, para os aspectos analíticos e epistemológicos. Cada plataforma, website ou [API](https://canaltech.com.br/software/o-que-e-api/) possui características particulares que vão, juntamente com o código que vamos contruir, determinar o tipo e natureza dos dados coletados.
+Portanto, talvez o primeiro passo seja buscar compreender a estrutura da página que abriga os dados que você pretende coletar. Para isso, é preciso conhecer o mínimo de HTML.
+
+Em seguida é importante definir quais dados e informações você pretende coletar e qual a estrtura de organização você pretende construir como resultado. Esse é um procedimento metodológico fundamental para a pesquisa e demanda do pesquisador o mesmo rigor acadêmico do trabalho com dados de outra natureza.
+
+Por fim, a escrita do código, utilizando a linguagem que melhor atenda aos seus interesses.
+
+Todos esses processos demandam um empenho de tempo e formação técnicas específicas, sem dúvida. Entretanto, acreditamos que os retornos possíveis justificam o investimento de tempo. Além disso, amplia as possibilidades de trabalho interdisciplinar, colaborativo e aberto.
+
+## 2.3 Webscraping enquanto técnica das humanidades
+
+Ao realizarmos um webscrapig é preciso atentar para os procedimentos não apenas “técnicos” envolvidos na raspagem mas, também, para os aspectos analíticos e epistemológicos. Cada plataforma, website ou [API](https://canaltech.com.br/software/o-que-e-api/) possui características particulares que vão, juntamente com o código que vamos contruir, determinar o tipo e natureza dos dados coletados.
 
 > A raspagem, entretanto, não é apenas uma técnica, mas também envolve uma forma particular de lidar com a informação e o conhecimento: é também uma prática analítica.[(MARRES, N. & WELTEVREDE, E. Scraping the Social? Journal of Cultural Economy, v. 6, n. 3, p. 313–335, 1 ago. 2013, p.317)](https://www.tandfonline.com/doi/abs/10.1080/17530350.2013.772070)
 
-Erros no código de raspagem podem produzir dados distorcidos, com lacunas ou mesmo em duplicidade. Podemos, então, considerar que um erro no código torna-se um erro metodológico.   
+Erros no código de raspagem podem produzir dados distorcidos, com lacunas ou mesmo em duplicidade. Podemos, então, considerar que um erro no código torna-se um erro metodológico.
+
+# Linguagens de programação
+
+## R
+
+
+
+## Python
+
+Alguns dos códigos que compõe o Redhbr foram escritos em [Python 3.8](https://www.python.org/). Esta é uma linguagem de programação que permite ao programados trabalhar rapidamente e integrar diferentes sistemas com maior eficiência.
+
+>Foi lançada por Guido van Rossum em 1991. Atualmente, possui um modelo de desenvolvimento comunitário, aberto e gerenciado pela organização sem fins lucrativos [Python Software Foundation](https://www.python.org/psf/).^[[Python - Wikipedia.org](https://pt.wikipedia.org/wiki/Python)]
+
+Parte da filosofia da linguagem está resumida no poema _Zen of Python_, [escrito por Tim Peters em 1999](https://pt.wikipedia.org/wiki/Python).
+
+>Bonito é melhor que feio
+Explícito é melhor que implícito
+Simples é melhor que complexo
+Complexo é melhor que complicado
+Linear é melhor do que aninhado
+Esparso é melhor que denso
+Legibilidade conta
+Casos especiais não são especiais o bastante para quebrar as regras.
+Ainda que praticidade vença a pureza
+Erros nunca devem passar silenciosamente. 
+A menos que sejam explicitamente silenciados
+Diante da ambiguidade, recuse a tentação de adivinhar
+Deveria haver um — e preferencialmente apenas um — modo óbvio para fazer algo.
+Embora esse modo possa não ser óbvio a princípio a menos que você seja holandês
+Agora é melhor que nunca
+Embora nunca freqüentemente seja melhor que já
+Se a implementação é difícil de explicar, é uma má ideia
+Se a implementação é fácil de explicar, pode ser uma boa ideia
+Namespaces são uma grande ideia — vamos ter mais dessas!^[[Zen of Python - Wikipedia.org](https://pt.wikipedia.org/wiki/Zen_of_Python)]
+
+Para executar um arquivo .py é preciso instalar o Python3 em seu computador.
+
+[Clique aqui](https://python.org.br/instalacao-windows/) para um tutorial de instalação do Python no Windows, [clique aqui](https://python.org.br/instalacao-linux/) para Linux e [clique aqui](https://python.org.br/instalacao-mac/)
+para Mac.
+
+Após a instalação, vc pode executar o arquivo .py direto do prompt de comando do Windows ou pelo terminal do Linux, ou utilizar as diversas [IDE](https://pt.wikipedia.org/wiki/Ambiente_de_desenvolvimento_integrado) disponíveis.
+
+Segue um exemplo de como executar utilizando o terminal do Linux, após instalar o Python3.8:
+
+1. Acesse o diretório em que o arquivo .py está salvo:
+   
+sh
+   ```$ cd "caminho do diretório"```
+   
+1. Instale as bibliotecas requeridas:
+   
+sh
+   ```$ pip3 install -r requirements.txt```
+   
+1. Execute o arquivo usando Python3.8
+   
+sh
+   ```$ python3 script-anais-anpuh.py```
+
 
 # ANPUH
 
@@ -79,11 +149,11 @@ Desenvolvemos scripts diferentes para dois tipos de conjuntos de dados relaciona
 
 - anpuh-scraper: script para raspagem dos resumos (e demais informações) de todos os trabalhos aprovados para todos os simpósios temáticos dos SNH nos aos de 2013, 2015, 2017 e 2019.
 
-## Anais-Anpuh
+## Scripts de raspagem 
 
-[Clique aqui para acessar o repositório no Github](https://github.com/LABHDUFBA/Anais-Anpuh).
+### Anais em pdf da ANPUH
 
-### Scripts de raspagem
+[**Clique aqui para acessar o repositório no Github**](https://github.com/LABHDUFBA/Anais-Anpuh)
 
 Esse script realiza a raspagem dos trabalhos em PDF de todos os Simpósios Nacionais da Anpuh entre 1963 até 2017, disponíveis atualmente na site da associação, que podem ser [acessados aqui](https://anpuh.org.br/index.php/documentos/anais).
 
@@ -120,11 +190,9 @@ O script também gera um arquivo **CSV** (*comma-separated values*) contendo os 
 
 ![](img/ex_csv1.png)
 
-## anpuh-scraper
+### Resumos dos trabalhos da ANPUH
 
-[Clique aqui para acessar o repositório no Github](https://github.com/LABHDUFBA/anpuh-scraper).
-
-### Scripts de raspagem
+[**Clique aqui para acessar o repositório no Github**](https://github.com/LABHDUFBA/anpuh-scraper).
 
 *Raspador dos resumos dos Simpósios Nacionais de História da [Associação Nacional de História - Anpuh](https://anpuh.org.br). O programa raspa todos os resumos dos SNH 27, 28, 29 e 30, respectivamente dos anos de 2013, 2015, 2017 e 2019*
 Escrito em [Python 3.8](https://www.python.org/), o script utiliza as seguintes bibliotecas e módulos
@@ -195,9 +263,6 @@ python src/main.py
 
 > Atenção &#8594; **para realizar esse procedimento, você precisa instalar o Google Chrome e o ChromeDriver**: [Clique aqui](https://chromedriver.chromium.org/getting-started) para ler um tutorial sobre como instalar o ChromeDriver.
 
-### Em breve
-
-Futuramente o raspador abarcará todos os GT's e SPG's do encontro 45, cujos resumos dos trabalhos estarão disponíveis [aqui](https://www.anpocs2021.sinteseeventos.com.br/). Além disso, ele contará com um módulo de limpeza dos dados que fará o pré-processamento para a análise qualitativa e/ou computacional.
 
 ## Dados
 
@@ -209,6 +274,13 @@ A imagem abaixo ilustra o formato de uma das tabelas:
 
 ![](img\anpocs_scraper_csv.png)
 
+Caso você não queira rodar o raspador, mas precise dos dados, você pode obter [a versão atual do conjunto de dados exportado pelo programa aqui](https://drive.google.com/drive/folders/1XdHLf3b7r0d1EwwlYo4D0bRBujVILBq7?usp=sharing).
+
+## Em breve
+
+Futuramente o raspador abarcará todos os GT’s e SPG’s do encontro 45, cujos resumos dos trabalhos estarão disponíveis aqui. Além disso, ele contará com um módulo de limpeza dos dados que fará o pré-processamento para a análise qualitativa e/ou computacional. Por fim, disponibilizaremos, também, todos os PDFs de artigos enviados para todas as edições dos Encontros Anuais da ANPOCS.
+
+
 # COMPÓS
 
 ## O que é a COMPÓS?
@@ -217,10 +289,44 @@ A imagem abaixo ilustra o formato de uma das tabelas:
 
 [Como espaço de intercâmbio acadêmico entre os pesquisadores dos vários Programas, a COMPÓS tem como fórum privilegiado os Encontros Anuais, estruturados sob a forma de Grupos de Trabalhos (GTs), onde são apresentados e debatidos estudos que buscam refletir sobre o avanço científico, tecnológico e cultural no campo da comunicação](https://www.compos.org.br/encontros_anuais.php)
 
-Diante disso, desenvolvemos o `anpocs-scraper` – [disponível aqui](https://github.com/vmussa/anpocs-scraper) –, um raspador que permite coletar de forma automatizada os dados dos resumos dos trabalhos apresentados nos encontros de 2019, 2020 e, futuramente, 2021. O raspador expressa mais uma iniciativa que busca contribuir para uma ciência aberta e transparente, facilitando o acesso aos dados dos congressos e contribuindo para a preservação da memória das ciências sociais brasileiras.
+Diante disso, desenvolvemos o `Anais-COMPOS-scraper` – [disponível aqui](https://github.com/LABHDUFBA/Anais-COMPOS-scraper) – que realiza o download automatizado de todos os papers em pdf dos Encontros da COMPÓS entre 2000 até 2020 (disponíveis atualmente na site). Além disso, o script também gera um arquivo CSV (comma-separated values) contendo as seguintes informações para cada paper: Ano, Edição, Nome do GT, Título, Autores, e Link do Arquivo. Esse arquivo pode ser aberto como uma planilha e trabalhado em banco de dados.
+
+O raspador expressa mais uma iniciativa que busca contribuir para uma ciência aberta e transparente, facilitando o acesso aos dados dos congressos e contribuindo para a preservação da memória das ciências sociais brasileiras.
 
 
 ## Script de raspagem
+
+### R e RStudio
+
+O R e RStudio são gratuitos e possuem versões para Windows, Mac e Linux. A instalação é bastante fácil e em geral você apenas tem que seguir as instruções da tela.
+
+Para instalar o R, baixe a versão adequada para seu computador em: [https://cloud.r-project.org/](https://cloud.r-project.org/)
+
+Para instalar o RStudio, baixe a versão adequada para seu computador em: [https://www.rstudio.com/products/rstudio/download/](https://www.rstudio.com/products/rstudio/download/)
+
+Além disso, para ter um ambiente completo de desenvolvimento no R, recomendamos, adicionalmente, instalar:
+
+– MikTex (para Windows:  [http://miktex.org/download](http://miktex.org/download) ou MacTex (para Mac:  [https://tug.org/mactex/downloading.html](https://tug.org/mactex/downloading.html) para relatórios em latex.
+
+– RTools (para Windows: [https://cran.r-project.org/bin/windows/Rtools/](https://cran.r-project.org/bin/windows/Rtools/) ou Xcode com command line tools (para Mac na AppStore do Mac), para criar pacotes, usar C++ com R entre outras  coisas
+
+Após a instalação, vc pode executar o arquivo **compos.R** que está na pasta **R** direto do RStudio.
+
+
+### Bibliotecas e módulos
+
+Vocêr vai precisar instalar as seguintes bibliotecas: 
+
+1. [RSelenium](https://cran.r-project.org/web/packages/RSelenium/RSelenium.pdf)
+2. [tidyverse](https://www.tidyverse.org/)
+3. [rvest](https://cran.r-project.org/web/packages/rvest/rvest.pdf)
+
+### Chromedriver
+
+1. [Instruções sobre como instalar o Chromedriver no Windows 10 :](https://www.youtube.com/watch?v=dz59GsdvUF8) 
+
+2. [Instruções sobre como instalar o Chromedriver no Ubuntu :](https://medium.com/@marco.conviccao/configurando-o-chromedriver-no-ubuntu-7baaf2be7c68)
+
 
 ## Dados
 
@@ -231,6 +337,11 @@ O programa exporta, para cada edição do congresso, uma tabela no formato CSV c
 A imagem abaixo ilustra o formato de uma das tabelas:
 
 ![](img\csv.png)
+
+[Se preferir baixar a base dos PDFs sem usar o código clique aqui.](https://filesender.rnp.br/?s=download&token=ae3e90f6-c8db-497f-a3e0-73958c634997)
+(**OBS:a nomeação ainda contém alguns pequenos erros que serão corrigidos em breve**)
+
+[Se preferir baixar a planilha sem usar o código clique aqui.](https://docs.google.com/spreadsheets/d/1VXlCD9rak-ut3_5p6UFyzOfuSgpbBcl9KDHrXe53q-0/edit?usp=sharing)
 
 # Sobre os autores
 
@@ -275,7 +386,14 @@ Currículos e redes acadêmicas
 
 [Webpage](https://vmussa.github.io) - [Lattes](http://lattes.cnpq.br/2934187748254130) - [ResearchGate](https://www.researchgate.net/profile/Vitor-Mussa-2) - [LinkedIn](https://www.linkedin.com/in/vmussa/) - [Twitter](https://twitter.com/vitormussa)
 
-## Tarssio
+## Tarssio Barreto (LABHDUFBA)
+
+Co-fundador da Bit Analytics, doutorando do Programa de Pós Graduação em Engenharia Industrial(PEI/UFBA) com foco na área de técnicas de agrupamentos voltadas para Machine Learning. Mestre em Meio Ambiente Águas e Saneamento - UFBA (2018) e graduado em Engenharia Sanitária e Ambiental pela UFBA (2015). Área de atuação: Machine Learning; modelagem probabilística e simulação e programação avançada em R.#RStats
+
+[Lattes](http://lattes.cnpq.br/8314700954142455) - 
+[LinkedIn](https://www.linkedin.com/in/tarssio-brito-barreto-9646b817b/) - 
+[Twitter](https://twitter.com/danielmnds34)
+
 
 ## Daniel Mendes (PATHS/UFRJ)
 

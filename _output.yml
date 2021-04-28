@@ -15,8 +15,8 @@ bookdown::gitbook:
       weibo: no
       instapaper: no
       vk: no
-      whatsapp: no
-      all: ['facebook', 'twitter', 'linkedin', 'weibo', 'instapaper']
+      whatsapp: yes
+      all: ['facebook', 'github', 'twitter', 'linkedin', 'whatsapp']
     info: yes
 
 
