@@ -11,6 +11,8 @@ author:
 date: "`r Sys.Date()`"
 url: 'https://labhdufba.github.io/redhbr/'
 github-repo: "LABHDUFBA/redhbr/"
+cover-image: "img/logo.jpg"
+favicon: "img/favicon.ico"
 output: pdf_document
 documentclass: book
 bibliography:
@@ -56,13 +58,13 @@ Ao compartilhar nas redes, pedimos que usem a hashtag **#dayofdh21**
 </center>
 
 
-# Webs craping e ciências sociais
+# Web scraping e ciências sociais
 
 ## Por que automatizar?
 
 A dataficação e a digitalização tornaram-se fenômenos massivos das sociedades contemporâneas. Ao interargirmos com as tecnologias digitais nós deixamos traços de dados que podem ser usados para a pesquisa sobre a sociedade. O desafio colocado para os pesquisadores das humanidades está em acessar e manipular tais dados:
 
-> “Como uma técnica de extração de dados online, o [webscraping] parece de interesse especial para nós porque é uma parte importante do que torna a pesquisa social digital praticamente possível.” [(MARRES, N. & WELTEVREDE, E. Scraping the Social? Journal of Cultural Economy, v. 6, n. 3, p. 313–335, 1 ago. 2013, p.317)](https://www.tandfonline.com/doi/abs/10.1080/17530350.2013.772070)
+> “Como uma técnica de extração de dados online, o [web scraping] parece de interesse especial para nós porque é uma parte importante do que torna a pesquisa social digital praticamente possível.” [(MARRES, N. & WELTEVREDE, E. Scraping the Social? Journal of Cultural Economy, v. 6, n. 3, p. 313–335, 1 ago. 2013, p.317)](https://www.tandfonline.com/doi/abs/10.1080/17530350.2013.772070)
 
 O volume, quantidade e qualidade dos dados digitais e digitalizados nunca foi tão grande. O acesso à fontes digitalizadas através de mecanismos de busca por palavras-chave, por assuntos, por metadatos em geral, os milhares de dados produzidos a cada segundo nas redes sociais ou o volume de publicações acadêmicas têm impactado as pesquisas e a própria construção do conhecimento nas ciências humanas e sociais.
 
@@ -82,7 +84,7 @@ Todos esses processos demandam um empenho de tempo e formação técnicas espec�
 
 ## Web scraping enquanto técnica das humanidades
 
-Ao realizarmos um webscrapig é preciso atentar para os procedimentos não apenas “técnicos” envolvidos na raspagem mas, também, para os aspectos analíticos e epistemológicos. Cada plataforma, website ou [API](https://canaltech.com.br/software/o-que-e-api/) possui características particulares que vão, juntamente com o código que vamos contruir, determinar o tipo e natureza dos dados coletados.
+Ao realizarmos um web scraping é preciso atentar para os procedimentos não apenas “técnicos” envolvidos na raspagem mas, também, para os aspectos analíticos e epistemológicos. Cada plataforma, website ou [API](https://canaltech.com.br/software/o-que-e-api/) possui características particulares que vão, juntamente com o código que vamos contruir, determinar o tipo e natureza dos dados coletados.
 
 > A raspagem, entretanto, não é apenas uma técnica, mas também envolve uma forma particular de lidar com a informação e o conhecimento: é também uma prática analítica.[(MARRES, N. & WELTEVREDE, E. Scraping the Social? Journal of Cultural Economy, v. 6, n. 3, p. 313–335, 1 ago. 2013, p.317)](https://www.tandfonline.com/doi/abs/10.1080/17530350.2013.772070)
 
@@ -109,23 +111,41 @@ Alguns dos códigos que compõe o Redhbr foram escritos em [Python 3.8](https://
 Parte da filosofia da linguagem está resumida no poema _Zen of Python_, [escrito por Tim Peters em 1999](https://pt.wikipedia.org/wiki/Python).
 
 >Bonito é melhor que feio
+>
 >Explícito é melhor que implícito
+>
 >Simples é melhor que complexo
+>
 >Complexo é melhor que complicado
+>
 >Linear é melhor do que aninhado
+>
 >Esparso é melhor que denso
+>
 >Legibilidade conta
+>
 >Casos especiais não são especiais o bastante para quebrar as regras.
+>
 >Ainda que praticidade vença a pureza
+>
 >Erros nunca devem passar silenciosamente. 
+>
 >A menos que sejam explicitamente silenciados
+>
 >Diante da ambiguidade, recuse a tentação de adivinhar
+>
 >Deveria haver um — e preferencialmente apenas um — modo óbvio para fazer algo.
+>
 >Embora esse modo possa não ser óbvio a princípio a menos que você seja holandês
+>
 >Agora é melhor que nunca
+>
 >Embora nunca freqüentemente seja melhor que já
+>
 >Se a implementação é difícil de explicar, é uma má ideia
+>
 >Se a implementação é fácil de explicar, pode ser uma boa ideia
+>
 >Namespaces são uma grande ideia — vamos ter mais dessas!^[[Zen of Python - Wikipedia.org](https://pt.wikipedia.org/wiki/Zen_of_Python)]
 
 Para executar um arquivo .py é preciso instalar o Python3 em seu computador.
