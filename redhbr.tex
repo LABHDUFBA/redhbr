@@ -79,7 +79,7 @@
 
 \title{\includegraphics[width=1\textwidth,height=\textheight]{./img/logo.jpg}}
 \author{Leonardo F. Nascimento\footnote{UFBA/ICTI/LABHDUFBA/PPGCS, \href{mailto:leofn@ufba.br}{\nolinkurl{leofn@ufba.br}}} \and Eric Brasil\footnote{UNILAB - LABHDUFBA, \href{mailto:profericbrasil@unilab.edu.br}{\nolinkurl{profericbrasil@unilab.edu.br}}} \and Gabriel Andrade\footnote{LABHDUFBA, \href{mailto:gabriel.andrad4@gmail.com}{\nolinkurl{gabriel.andrad4@gmail.com}}} \and Tarssio Barreto\footnote{LABHDUFBA, \href{mailto:tarssioesa@gmail.com}{\nolinkurl{tarssioesa@gmail.com}}} \and Vítor Mussa\footnote{UFRJ/PPGSA/DTA - LABHDUFBA, \href{mailto:vtrmussa@gmail.com}{\nolinkurl{vtrmussa@gmail.com}}} \and Daniel Mendes\footnote{UFRJ/PATHS, \href{mailto:daniel_mnds34@hotmail.com}{\nolinkurl{daniel\_mnds34@hotmail.com}}}}
-\date{2021-04-28}
+\date{2021-04-29}
 
 \begin{document}
 \maketitle
@@ -109,8 +109,8 @@ Ao compartilhar nas redes, pedimos que usem a hashtag \textbf{\#dayofdh21}
 \caption{Símbolo do \#dayofdh21}
 \end{figure}
 
-\hypertarget{webs-craping-e-ciuxeancias-sociais}{%
-\chapter{Webs craping e ciências sociais}\label{webs-craping-e-ciuxeancias-sociais}}
+\hypertarget{web-scraping-e-ciuxeancias-sociais}{%
+\chapter{Web scraping e ciências sociais}\label{web-scraping-e-ciuxeancias-sociais}}
 
 \hypertarget{por-que-automatizar}{%
 \section{Por que automatizar?}\label{por-que-automatizar}}
@@ -118,7 +118,7 @@ Ao compartilhar nas redes, pedimos que usem a hashtag \textbf{\#dayofdh21}
 A dataficação e a digitalização tornaram-se fenômenos massivos das sociedades contemporâneas. Ao interargirmos com as tecnologias digitais nós deixamos traços de dados que podem ser usados para a pesquisa sobre a sociedade. O desafio colocado para os pesquisadores das humanidades está em acessar e manipular tais dados:
 
 \begin{quote}
-``Como uma técnica de extração de dados online, o {[}webscraping{]} parece de interesse especial para nós porque é uma parte importante do que torna a pesquisa social digital praticamente possível.'' \href{https://www.tandfonline.com/doi/abs/10.1080/17530350.2013.772070}{(MARRES, N. \& WELTEVREDE, E. Scraping the Social? Journal of Cultural Economy, v. 6, n.~3, p.~313--335, 1 ago. 2013, p.317)}
+``Como uma técnica de extração de dados online, o {[}web scraping{]} parece de interesse especial para nós porque é uma parte importante do que torna a pesquisa social digital praticamente possível.'' \href{https://www.tandfonline.com/doi/abs/10.1080/17530350.2013.772070}{(MARRES, N. \& WELTEVREDE, E. Scraping the Social? Journal of Cultural Economy, v. 6, n.~3, p.~313--335, 1 ago. 2013, p.317)}
 \end{quote}
 
 O volume, quantidade e qualidade dos dados digitais e digitalizados nunca foi tão grande. O acesso à fontes digitalizadas através de mecanismos de busca por palavras-chave, por assuntos, por metadatos em geral, os milhares de dados produzidos a cada segundo nas redes sociais ou o volume de publicações acadêmicas têm impactado as pesquisas e a própria construção do conhecimento nas ciências humanas e sociais.
@@ -141,7 +141,7 @@ Todos esses processos demandam um empenho de tempo e formação técnicas espec�
 \hypertarget{web-scraping-enquanto-tuxe9cnica-das-humanidades}{%
 \section{Web scraping enquanto técnica das humanidades}\label{web-scraping-enquanto-tuxe9cnica-das-humanidades}}
 
-Ao realizarmos um webscrapig é preciso atentar para os procedimentos não apenas ``técnicos'' envolvidos na raspagem mas, também, para os aspectos analíticos e epistemológicos. Cada plataforma, website ou \href{https://canaltech.com.br/software/o-que-e-api/}{API} possui características particulares que vão, juntamente com o código que vamos contruir, determinar o tipo e natureza dos dados coletados.
+Ao realizarmos um web scraping é preciso atentar para os procedimentos não apenas ``técnicos'' envolvidos na raspagem mas, também, para os aspectos analíticos e epistemológicos. Cada plataforma, website ou \href{https://canaltech.com.br/software/o-que-e-api/}{API} possui características particulares que vão, juntamente com o código que vamos contruir, determinar o tipo e natureza dos dados coletados.
 
 \begin{quote}
 A raspagem, entretanto, não é apenas uma técnica, mas também envolve uma forma particular de lidar com a informação e o conhecimento: é também uma prática analítica.\href{https://www.tandfonline.com/doi/abs/10.1080/17530350.2013.772070}{(MARRES, N. \& WELTEVREDE, E. Scraping the Social? Journal of Cultural Economy, v. 6, n.~3, p.~313--335, 1 ago. 2013, p.317)}
@@ -174,23 +174,41 @@ Parte da filosofia da linguagem está resumida no poema \emph{Zen of Python}, \h
 
 \begin{quote}
 Bonito é melhor que feio
+
 Explícito é melhor que implícito
+
 Simples é melhor que complexo
+
 Complexo é melhor que complicado
+
 Linear é melhor do que aninhado
+
 Esparso é melhor que denso
+
 Legibilidade conta
+
 Casos especiais não são especiais o bastante para quebrar as regras.
+
 Ainda que praticidade vença a pureza
+
 Erros nunca devem passar silenciosamente.
+
 A menos que sejam explicitamente silenciados
+
 Diante da ambiguidade, recuse a tentação de adivinhar
+
 Deveria haver um --- e preferencialmente apenas um --- modo óbvio para fazer algo.
+
 Embora esse modo possa não ser óbvio a princípio a menos que você seja holandês
+
 Agora é melhor que nunca
+
 Embora nunca freqüentemente seja melhor que já
+
 Se a implementação é difícil de explicar, é uma má ideia
+
 Se a implementação é fácil de explicar, pode ser uma boa ideia
+
 Namespaces são uma grande ideia --- vamos ter mais dessas!\footnote{\href{https://pt.wikipedia.org/wiki/Zen_of_Python}{Zen of Python - Wikipedia.org}}
 \end{quote}
 
