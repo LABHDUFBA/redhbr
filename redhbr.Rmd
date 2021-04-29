@@ -107,24 +107,24 @@ Alguns dos códigos que compõe o Redhbr foram escritos em [Python 3.8](https://
 Parte da filosofia da linguagem está resumida no poema _Zen of Python_, [escrito por Tim Peters em 1999](https://pt.wikipedia.org/wiki/Python).
 
 >Bonito é melhor que feio
->Explícito é melhor que implícito
->Simples é melhor que complexo
->Complexo é melhor que complicado
->Linear é melhor do que aninhado
->Esparso é melhor que denso
->Legibilidade conta
->Casos especiais não são especiais o bastante para quebrar as regras.
->Ainda que praticidade vença a pureza
->Erros nunca devem passar silenciosamente. 
->A menos que sejam explicitamente silenciados
->Diante da ambiguidade, recuse a tentação de adivinhar
->Deveria haver um — e preferencialmente apenas um — modo óbvio para fazer algo.
->Embora esse modo possa não ser óbvio a princípio a menos que você seja holandês
->Agora é melhor que nunca
->Embora nunca freqüentemente seja melhor que já
->Se a implementação é difícil de explicar, é uma má ideia
->Se a implementação é fácil de explicar, pode ser uma boa ideia
->Namespaces são uma grande ideia — vamos ter mais dessas!^[[Zen of Python - Wikipedia.org](https://pt.wikipedia.org/wiki/Zen_of_Python)]
+Explícito é melhor que implícito
+Simples é melhor que complexo
+Complexo é melhor que complicado
+Linear é melhor do que aninhado
+Esparso é melhor que denso
+Legibilidade conta
+Casos especiais não são especiais o bastante para quebrar as regras.
+Ainda que praticidade vença a pureza
+Erros nunca devem passar silenciosamente. 
+A menos que sejam explicitamente silenciados
+Diante da ambiguidade, recuse a tentação de adivinhar
+Deveria haver um — e preferencialmente apenas um — modo óbvio para fazer algo.
+Embora esse modo possa não ser óbvio a princípio a menos que você seja holandês
+Agora é melhor que nunca
+Embora nunca freqüentemente seja melhor que já
+Se a implementação é difícil de explicar, é uma má ideia
+Se a implementação é fácil de explicar, pode ser uma boa ideia
+Namespaces são uma grande ideia — vamos ter mais dessas!^[[Zen of Python - Wikipedia.org](https://pt.wikipedia.org/wiki/Zen_of_Python)]
 
 Para executar um arquivo .py é preciso instalar o Python3 em seu computador.
 
@@ -206,8 +206,6 @@ O script também gera um arquivo **CSV** (*comma-separated values*) contendo os 
 
 ![](img/ex_csv1.png)
 
-**Download**: [Se preferir baixar a base dos PDFs sem usar o código clique aqui](https://filesender.rnp.br/?s=download&token=9c7d390c-0033-4777-8e63-31044168c4b1).
-
 ### Resumos dos trabalhos da ANPUH
 
 [**Clique aqui para acessar o repositório no Github**](https://github.com/LABHDUFBA/anpuh-scraper).
@@ -239,8 +237,6 @@ O CSV contém as seguintes variáveis para cada resumo:
 Esse arquivo pode ser aberto como uma planilha e trabalhado em banco de dados.
 
 ![](img/ex_csv2.png)
-
-**Download**: [Se preferir baixar a planilha sem usar o código clique aqui](https://drive.google.com/file/d/12QCIsvFGIhveD84HUKwsLG-RbtpKBNsh/view?usp=sharing).
 
 # ANPOCS
 
@@ -358,10 +354,10 @@ A imagem abaixo ilustra o formato de uma das tabelas:
 
 ![](img\csv.png)
 
-**Download**: [Se preferir baixar a base dos PDFs sem usar o código clique aqui.](https://filesender.rnp.br/?s=download&token=ae3e90f6-c8db-497f-a3e0-73958c634997)
+[Se preferir baixar a base dos PDFs sem usar o código clique aqui.](https://filesender.rnp.br/?s=download&token=ae3e90f6-c8db-497f-a3e0-73958c634997)
 (**OBS:a nomeação ainda contém alguns pequenos erros que serão corrigidos em breve**)
 
-**Download**: [Se preferir baixar a planilha sem usar o código clique aqui.](https://docs.google.com/spreadsheets/d/1VXlCD9rak-ut3_5p6UFyzOfuSgpbBcl9KDHrXe53q-0/edit?usp=sharing)
+[Se preferir baixar a planilha sem usar o código clique aqui.](https://docs.google.com/spreadsheets/d/1VXlCD9rak-ut3_5p6UFyzOfuSgpbBcl9KDHrXe53q-0/edit?usp=sharing)
 
 # Sobre os autores
 
