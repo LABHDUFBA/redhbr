@@ -68,6 +68,9 @@
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \setcounter{secnumdepth}{5}
 \usepackage{booktabs}
+\usepackage{titling}
+\pretitle{\begin{center} \includegraphics[width=2in,height=2in]{logo.jpg}\LARGE\\}
+\posttitle{\end{center}}
 \ifluatex
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
@@ -85,6 +88,8 @@
 \setcounter{tocdepth}{1}
 \tableofcontents
 }
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
 \hypertarget{apresentauxe7uxe3o}{%
 \chapter{Apresentação}\label{apresentauxe7uxe3o}}
 
@@ -105,10 +110,10 @@ Ao compartilhar nas redes, pedimos que usem a hashtag \textbf{\#dayofdh21}
 \end{figure}
 
 \hypertarget{webscraping-e-ciuxeancias-sociais}{%
-\chapter{2 Webscraping e ciências sociais}\label{webscraping-e-ciuxeancias-sociais}}
+\chapter{Webscraping e ciências sociais}\label{webscraping-e-ciuxeancias-sociais}}
 
 \hypertarget{por-que-automatizar}{%
-\section{2.1 Por que automatizar?}\label{por-que-automatizar}}
+\section{Por que automatizar?}\label{por-que-automatizar}}
 
 A dataficação e a digitalização tornaram-se fenomenos massivos das sociedades contemporâneas. Ao interargirmos com as tecnologias digitais nós deixamos traços de dados que podem ser usados para a pesquisa sobre a sociedade. O desafio colocado para os pesquisadores das humanidades está em acessar e manipular tais dados:
 
@@ -121,7 +126,7 @@ O volume, quantidade e qualidade dos dados digitais e digitalizados nunca foi t�
 Assim, é urgente a necessidade de enfrentarmos os desafios metodológicos e teóricos colocados por esse cenário. A automatização na coleta de dados na Web não é apenas uma forma de acelarar essa relação do pequisador com os dados, mas de qualificar e potencializar a tarefa heurística de seleção dos mesmos.
 
 \hypertarget{como-comeuxe7ar}{%
-\section{2.2 Como começar?}\label{como-comeuxe7ar}}
+\section{Como começar?}\label{como-comeuxe7ar}}
 
 É preciso aprender algum tipo de linguagem de programação (geralmente R ou Python), além de conhecimentos em HTML, CSS e XPATH. Sabemos que, à primeira vista, parecem ser termos complicados para quem vem ``das humanas'', mas o entendimento destas coisas é relativamente mais simples que muitas das leituras que nós fazemos.
 
@@ -134,7 +139,7 @@ Por fim, a escrita do código, utilizando a linguagem que melhor atenda aos seus
 Todos esses processos demandam um empenho de tempo e formação técnicas específicas, sem dúvida. Entretanto, acreditamos que os retornos possíveis justificam o investimento de tempo. Além disso, amplia as possibilidades de trabalho interdisciplinar, colaborativo e aberto.
 
 \hypertarget{webscraping-enquanto-tuxe9cnica-das-humanidades}{%
-\section{2.3 Webscraping enquanto técnica das humanidades}\label{webscraping-enquanto-tuxe9cnica-das-humanidades}}
+\section{Webscraping enquanto técnica das humanidades}\label{webscraping-enquanto-tuxe9cnica-das-humanidades}}
 
 Ao realizarmos um webscrapig é preciso atentar para os procedimentos não apenas ``técnicos'' envolvidos na raspagem mas, também, para os aspectos analíticos e epistemológicos. Cada plataforma, website ou \href{https://canaltech.com.br/software/o-que-e-api/}{API} possui características particulares que vão, juntamente com o código que vamos contruir, determinar o tipo e natureza dos dados coletados.
 

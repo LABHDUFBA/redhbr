@@ -1,6 +1,5 @@
 --- 
 title: |
-      
       ![](./img/logo.jpg){width=100%}
 author:
 - Leonardo F. Nascimento^[UFBA/ICTI/LABHDUFBA/PPGCS, leofn@ufba.br]
@@ -19,7 +18,16 @@ biblio-style: apalike
 link-citations: yes
 description: Obra colaborativa com scripts e dados da produção intelectual brasileira em todos os campos das humanidades coletadas e agrupadas através de técnicas computacionais de extração autoamtizada (web scraping)
 site: bookdown::bookdown_site
-
+header-includes:
+  - \usepackage{titling}
+  - \pretitle{\begin{center}
+    \includegraphics[width=2in,height=2in]{logo.jpg}\LARGE\\}
+  - \posttitle{\end{center}}
+---
+```{js, echo = FALSE}
+title=document.getElementById('header');
+title.innerHTML = '<img src="./img/logo.jpg" alt="Test Image">' + title.innerHTML
+```
 ---
 
 # Apresentação
@@ -46,9 +54,9 @@ Ao compartilhar nas redes, pedimos que usem a hashtag **#dayofdh21**
 </center>
 
 
-# 2 Webscraping e ciências sociais
+# Webscraping e ciências sociais
 
-## 2.1 Por que automatizar?
+## Por que automatizar?
 
 A dataficação e a digitalização tornaram-se fenomenos massivos das sociedades contemporâneas. Ao interargirmos com as tecnologias digitais nós deixamos traços de dados que podem ser usados para a pesquisa sobre a sociedade. O desafio colocado para os pesquisadores das humanidades está em acessar e manipular tais dados:
 
@@ -58,7 +66,7 @@ O volume, quantidade e qualidade dos dados digitais e digitalizados nunca foi t�
 
 Assim, é urgente a necessidade de enfrentarmos os desafios metodológicos e teóricos colocados por esse cenário. A automatização na coleta de dados na Web não é apenas uma forma de acelarar essa relação do pequisador com os dados, mas de qualificar e potencializar a tarefa heurística de seleção dos mesmos. 
 
-## 2.2 Como começar?
+## Como começar?
 
 É preciso aprender algum tipo de linguagem de programação (geralmente R ou Python), além de conhecimentos em HTML, CSS e XPATH. Sabemos que, à primeira vista, parecem ser termos complicados para quem vem "das humanas", mas o entendimento destas coisas é relativamente mais simples que muitas das leituras que nós fazemos. 
 
@@ -70,7 +78,7 @@ Por fim, a escrita do código, utilizando a linguagem que melhor atenda aos seus
 
 Todos esses processos demandam um empenho de tempo e formação técnicas específicas, sem dúvida. Entretanto, acreditamos que os retornos possíveis justificam o investimento de tempo. Além disso, amplia as possibilidades de trabalho interdisciplinar, colaborativo e aberto.
 
-## 2.3 Webscraping enquanto técnica das humanidades
+## Webscraping enquanto técnica das humanidades
 
 Ao realizarmos um webscrapig é preciso atentar para os procedimentos não apenas “técnicos” envolvidos na raspagem mas, também, para os aspectos analíticos e epistemológicos. Cada plataforma, website ou [API](https://canaltech.com.br/software/o-que-e-api/) possui características particulares que vão, juntamente com o código que vamos contruir, determinar o tipo e natureza dos dados coletados.
 
@@ -81,6 +89,12 @@ Erros no código de raspagem podem produzir dados distorcidos, com lacunas ou me
 # Linguagens de programação
 
 ## R
+
+R é uma linguagem e um ambiente de desenvolvimento integrado, para cálculos estatísticos e gráficos. Foi criada originalmente por Ross Ihaka e por Robert Gentleman no departamento de Estatística da universidade de Auckland, Nova Zelândia, e foi desenvolvido por um esforço colaborativo de pessoas em vários locais do mundo.O nome R provêm em parte das iniciais dos criadores e também de um jogo figurado com a linguagem S (da Bell Laboratories, antiga AT&T).
+
+O código fonte do R está disponível sob a licença GNU4 5 GPL e as versões binárias pré-compiladas são fornecidas para Windows, Macintosh, e muitos sistemas operacionais Unix/Linux. R é também altamente expansível com o uso dos pacotes, que são bibliotecas para funções específicas ou áreas de estudo específicas.Um conjunto de pacotes é incluído com a instalação de R, com muito outros disponíveis na rede de distribuição do R (em inglês CRAN).
+
+Um dos pontos fortes da linguagem R é a sua comunidade, extremamente acolhedora e que estimula todos os novos participantes. No Telegram existe existe um grupo extremamente ativo onde é possível tirar dúvidas: [R Brasil](https://t.me/rbrasiloficial)
 
 
 
@@ -425,4 +439,7 @@ Currículos e redes acadêmicas
 
 </center>
 
-
+```{js, echo = FALSE}
+title=document.getElementById('header');
+title.innerHTML = '<img src="https://labhdufba.github.io/redhbr/img/logo.jpg" alt="Test Image">' + title.innerHTML
+```
