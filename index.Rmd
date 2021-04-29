@@ -1,5 +1,5 @@
 --- 
-title: |
+title: | 
       ![](./img/logo.jpg){width=100%}
 author:
 - Leonardo F. Nascimento^[UFBA/ICTI/LABHDUFBA/PPGCS, leofn@ufba.br]
