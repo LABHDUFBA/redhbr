@@ -58,7 +58,7 @@ Ao compartilhar nas redes, pedimos que usem a hashtag **#dayofdh21**
 
 ## Por que automatizar?
 
-A dataficação e a digitalização tornaram-se fenomenos massivos das sociedades contemporâneas. Ao interargirmos com as tecnologias digitais nós deixamos traços de dados que podem ser usados para a pesquisa sobre a sociedade. O desafio colocado para os pesquisadores das humanidades está em acessar e manipular tais dados:
+A dataficação e a digitalização tornaram-se fenômenos massivos das sociedades contemporâneas. Ao interargirmos com as tecnologias digitais nós deixamos traços de dados que podem ser usados para a pesquisa sobre a sociedade. O desafio colocado para os pesquisadores das humanidades está em acessar e manipular tais dados:
 
 > “Como uma técnica de extração de dados online, o [webscraping] parece de interesse especial para nós porque é uma parte importante do que torna a pesquisa social digital praticamente possível.” [(MARRES, N. & WELTEVREDE, E. Scraping the Social? Journal of Cultural Economy, v. 6, n. 3, p. 313–335, 1 ago. 2013, p.317)](https://www.tandfonline.com/doi/abs/10.1080/17530350.2013.772070)
 
