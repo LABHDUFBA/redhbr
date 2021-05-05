@@ -3,7 +3,7 @@ title: |
       ![](./img/logo.jpg){width=100%}
 author:
 - Leonardo F. Nascimento^[UFBA/ICTI/LABHDUFBA/PPGCS, leofn@ufba.br]
-- Eric Brasil^[UNILAB - LABHDUFBA, profericbrasil@unilab.edu.br]
+- Eric Brasil^[IHLM/UNILAB, LABHDUFBA, profericbrasil@unilab.edu.br]
 - Gabriel Andrade^[LABHDUFBA, gabriel.andrad4@gmail.com] 
 - Tarssio Barreto^[LABHDUFBA, tarssioesa@gmail.com ]
 - Vítor Mussa^[UFRJ/PPGSA/DTA - LABHDUFBA, vtrmussa@gmail.com]
@@ -20,7 +20,7 @@ bibliography:
 - packages.bib
 biblio-style: apalike
 link-citations: yes
-description: Obra colaborativa com scripts e dados da produção intelectual brasileira em todos os campos das humanidades coletadas e agrupadas através de técnicas computacionais de extração autoamtizada (web scraping)
+description: Repositório Digital das Humanidades (PT-BR) - REDHBR. Obra colaborativa com scripts e dados da produção intelectual brasileira em todos os campos das humanidades coletadas e agrupadas através de técnicas computacionais de extração autoamtizada (web scraping)
 site: bookdown::bookdown_site
 header-includes:
   - \usepackage{titling}
@@ -47,7 +47,7 @@ Além disso, nós tivemos como objetivo mais amplo enfatizar a importância do d
 
 Os scripts, as bases de dados e todos os documentos estão disponíveis e poderão ser baixados com apenas um clique. O acervo servirá para a realização de investigações sobre os mais variados aspectos e ampliar, com isso, o conhecimento sobre a produção acadêmica, científica e intelectual do Brasil das ciências humanas e sociais ao longo de décadas. 
 
-Para o lancamento, nós escolhemos o [Dia Internacional das Humanidades Digitais](https://dhcenternet.org/initiatives/day-of-dh/2021) em 29/04/2021.
+Para o lancamento do Repositório Digital das Humanidades (PT-BR) - REDHBR, nós escolhemos o [Dia Internacional das Humanidades Digitais](https://dhcenternet.org/initiatives/day-of-dh/2021) em 29/04/2021.
 
 Ao compartilhar nas redes, pedimos que usem a hashtag **#dayofdh21**
 
@@ -170,7 +170,7 @@ sh
 1. Execute o arquivo usando Python3.8
    
 sh
-   ```$ python3 script-anais-anpuh.py```
+   ```$ python3 exemplo.py```
 
 
 # ANPUH
@@ -228,7 +228,7 @@ O script também gera um arquivo **CSV** (*comma-separated values*) contendo os 
 
 ![](img/ex_csv1.png)
 
-**Download**: [Se preferir baixar a base dos PDFs sem usar o código clique aqui](https://filesender.rnp.br/?s=download&token=9c7d390c-0033-4777-8e63-31044168c4b1).
+**Download**: [Se preferir baixar a base dos PDFs sem usar o código clique aqui](http://u.pc.cd/hhFotalK).
 
 ### Resumos dos trabalhos da ANPUH
 
@@ -262,7 +262,7 @@ Esse arquivo pode ser aberto como uma planilha e trabalhado em banco de dados.
 
 ![](img/ex_csv2.png)
 
-**Download**: [Se preferir baixar a planilha sem usar o código clique aqui](https://drive.google.com/file/d/12QCIsvFGIhveD84HUKwsLG-RbtpKBNsh/view?usp=sharing).
+**Download**: [Se preferir baixar a planilha sem usar o código clique aqui](http://u.pc.cd/AcbrtalK).
 
 # ANPOCS
 
@@ -385,6 +385,116 @@ A imagem abaixo ilustra o formato de uma das tabelas:
 
 **Download**: [Se preferir baixar a planilha sem usar o código clique aqui.](https://docs.google.com/spreadsheets/d/1VXlCD9rak-ut3_5p6UFyzOfuSgpbBcl9KDHrXe53q-0/edit?usp=sharing)
 
+# Scielo.br
+
+## O que é Scielo?
+
+Scielo (*Scientific Electronic Library Online* e que  ) é uma biblioteca digital que reune uma vasta coleção de periódicos científicos brasileiros. Segundo [site oficial](https://www.scielo.br), consiste seu objetivo é ser:
+
+>Biblioteca eletrônica que possa proporcionar um amplo acesso a coleções de periódicos como um todo, aos fascículos de cada título de periódico, assim como aos textos completos dos artigos. O acesso aos títulos dos periódicos e aos artigos pode ser feito através de índices e de formulários de busca.
+> (...)
+>O site da SciELO é parte do Projeto FAPESP/BIREME/CNPq e um dos produtos da aplicação da metodologia para preparação de publicações eletrônicas em desenvolvimento, especialmente o módulo de interface Internet.
+
+Além dos artigos em formato PDF, o Scielo.br disponibiliza arquivos em formato XML para todos os itens de todos os periódicos que formam sua coleção. Esses XML possuem metadados muito valiosos para pesquisas nas mais variadas áreas e com interesses múltiplos.
+
+Portanto, diante do valor imenso desse conjunto de dados para as pesquisas em Humanidades, desenvolvemos três ferramentas de raspagem de dados específicas para o Scielo.br.
+
+- A primeira delas, `scielo_scraper`, permite que o usuário define uma das oito áreas de conhecimento disponíveis na coleção do Scielo.br para efetuar uma raspagem completa (é possível optar se pretende raspar os arquivos PDF ou apenas os arquivos XML);
+- A segunda, `scielo_ISSN`, permite que o usuário defina uma lista específica de revistas que pretende raspar através ISSN de cada uma delas. Assim como na ferramenta anterior, é possível definir o tipo de raspagem (PDF ou XML);
+- A terceira ferramente é específica para tratamento dos dados gerados pelas raspagens dos arquivos XML. A `scielo_xml_to_csv `  analisa, seleciona, organiza e salva as informações do dataset de arquivos XML das revistas previamente baixados a partir das ferramentas anteriores.
+
+Abaixo, detalhamos cada uma delas.
+
+## Scripts de raspagem 
+
+[**Clique aqui para acessar o repositório no Github**](https://github.com/LABHDUFBA/ferramentas_scielo)
+
+### scielo_scraper - Raspagem por área do conhecimento
+
+Esse script permite ao usuário selecionar qual assunto ele pretende raspar de acordo com a categorização estabelecida pela plataforma [Scielo.br](https://www.scielo.br/scielo.php?script=sci_subject&lng=pt&nrm=iso). Após rodar o `run_scielo_scraper.py` é possível escolher entre oito assunto:
+
+* Ciências Agrárias
+* Ciências Biológicas
+* Ciências da Saúde
+* Ciêncas Exatas e da Terra 
+* Ciências Humanas
+* Ciências Sociais Aplicadas
+* Engenharias
+* Linguística, Letras e Artes
+
+Após a definição do assunto, é preciso definir o tipo de raspagem: 
+
+1. Realizar o download de todos os arquivos PDF de cada revista do assunto selecionado. É criado um CSV com informações básicas sobre a raspagem (nome da revista, ISSN, nome do arquivo e link para o PDF)
+
+:warning: Devido ao volume de dados, contando dezenas de milhares de artigos, o download de todos os arquivos PDF demandará  muito tempo e uso intenso de sua máquina.
+
+2. Realizar o download dos arquivos XML de cada revista do assunto selecionado.
+
+:warning: Os arquivos XML possuem todos os metadados dos artigos, incluíndo as referências bibliográficas). Após o download dos arquivos XML é posssível utilizar a ferramenta `scielo_xml_to_csv` para convertar todos os XML para uma planilha. Para mais informações leia o [README.md](https://github.com/LABHDUFBA/ferramentas_scielo/blob/master/scielo_xml_to_csv/README.md) da ferramenta.
+
+![](img/scielo_ex1.png)
+
+### scielo_ISSN - Raspagem por ISSN
+
+Nesse script é possível raspar uma revista ou uma lista de revistas através do ISSN.
+
+Possui as mesmas características do `run_scielo_scraper.py`, porém a definição da(s) revista(s) a ser raspada é feita ISSN. 
+
+![](img/scielo_ex2.png)
+
+## Dados
+
+Ambos os scripts criarão diretórios para armazenar os arquivos e dados.
+
+- `scielo/pdf/nomeDaRevista` no caso da raspagem de PDFs;
+- `scielo/xml/nomeDaRevista` no caso da raspagem de XMls.
+
+:warning: Atenção: Se a pasta com o nome de uma revista já exixtir, o algoritmo entenderá que a raspagem dela já foi efetuada e **passará para a revista seguinte seguinte**.
+
+**Download**: [Se preferir baixar a base dos XML das revistas da área de *Ciências Humanas* sem usar o código clique aqui](http://u.pc.cd/ntkrtalK). Esse arquivo zipado é formado pelos arquivos XML de 91 revistas categorizada como Ciências Humanas pelo Scielo.br, totalizando **72.552 itens**. Essa raspagem foi realizada em 22 de novembro de 2020 e o arquivo .zip tem **890.2 MB.**
+
+## scielo_xml_to_csv - Tratamento dos dados
+
+[**Clique aqui para acessar o repositório no Github**](https://github.com/LABHDUFBA/ferramentas_scielo/tree/master/scielo_xml_to_csv)
+
+**Scripts para converter Dataset de XML  das revistas do _Scielo_ (previamente baixado) para CSV.**
+
+Esses scripts tem como objetivos analisar, selecionar, organizar e salvar informações de um dataset de arquivos XML de todas as revistas previamente baixados a partir das `ferramentas_scielo`
+
+O `run.py` , após solicitar que o usuário defina o caminho da pasta com o dataset, acessa a mesma e analisa cada XML, inserindo os dados em um arquivo CSV salvo com o nome `metadata_{revista}.csv`, numa pasta `scielo/xml/CSVs`.
+
+:warning: _É preciso definir o caminho do diretório com o dataset. Essa pasta deve conter pastas de cada revista com seus arquivos XML a serem analisados._
+
+![](img/scielo_ex3.png)
+
+As seguintes informações são inseridas no CSV:
+
+- index,
+- file_name: nome do arquivo,
+- article_id: identificação do arquivo,
+- authors: lista de autores,
+- authors affiliation: lista de filiações,
+- article_title: título do artigo,
+- journal_title: título do revista,
+- journal_issn: ISSN da revista,
+- journal_publisher: instituição da revista,
+- pub_date: data da publicação,
+- abstract: resumo,
+- key_words: lista de palavras-chave,
+- volume: volume,
+- num: número,
+- fpage: pasta inicial,
+- lpage: página final,
+- doi: DOI,
+- refs: lista (contendo listas) das referências, divididas por tipo (livro, capítulo, artigo, etc)
+- link pdf: link para o arquivo em PDF do artigo.
+
+Em seguida, com a função `df_final()`, todos os arquivos CSV são unidos (ou concatenados) em um único dataframe com `Pandas` e salvos em um CSV chamado `metadata_scielo_{yyyy-mm-dd_H-M-S}.csv` na pasta `scielo/xml/CSVs/metadados-scielo`. Nesse csv final há uma nova coluna chamada original_index, onde consta a numeração do index original de cada revista e um novo index geral é criado (consta na atualização de 04/05/2021).
+
+**Download**: [Se preferir baixar a base dos CSV de *Ciências Humanas* sem usar o código clique aqui](http://u.pc.cd/ba27). Esse arquivo zipado é formado pelos arquivos CSV das 91 revistas categorizada como Ciências Humanas pelo Scielo.br previamente raspados usando a ferramenta `scielo_scraper` em 22 de novembro de 2020. A execução do `scielo_xml_to_csv`aconteceu em 04/04/2021 e gerou esse arquivo zipado com todos os 91 CSVs de cada revista mais o CSV final, com todos os **72.552 itens** e possui **234.4 MB**.
+
+Elementos presentes nesse repositório foram retirados de [Scielo_Journal_Metadata_Downoader](https://github.com/johnsgomez/Scielo_Journal_Metadata_Downoader), criado por [johnsgomez](https://github.com/johnsgomez)
+
 # Sobre os autores
 
 <style>
@@ -409,7 +519,7 @@ Currículos e redes acadêmicas
  
 ## Eric Brasil (IHLM/UNILAB)
 
-Professor do curso de licenciatura em História e professor do Bacharelado Interdisciplinar em Humanidades no Instituto de Humanidades e Letras da Universidade da Integração Internacional da Lusofonia Afro-brasileira (IHL-UNILAB), campus dos Malês, Bahia. Doutor (2016) e Mestre (2011) pelo Programa de Pós-Graduação em História Social da Universidade Federal Fluminense. Autor do livro A Corte em Festa: experiências negras em carnavais do Rio de Janeiro (1879-1888) (Editora Prismas, 2016). Vencedor do primeiro lugar no Concurso de Monografias Silvio Romero de 2011 e do segundo lugar em 2020, promovido pelo Centro Nacional de Folclore e Cultura Popular.Foi professor de ensino fundamental, médio e pré-vestibular no Rio de Janeiro entre 2007 e 2017.
+Professor do curso de licenciatura em História e professor do Bacharelado Interdisciplinar em Humanidades no Instituto de Humanidades e Letras da Universidade da Integração Internacional da Lusofonia Afro-brasileira (IHLM/UNILAB), campus dos Malês, Bahia. Doutor (2016) e Mestre (2011) pelo Programa de Pós-Graduação em História Social da Universidade Federal Fluminense. Autor do livro A Corte em Festa: experiências negras em carnavais do Rio de Janeiro (1879-1888) (Editora Prismas, 2016). Vencedor do primeiro lugar no Concurso de Monografias Silvio Romero de 2011 e do segundo lugar em 2020, promovido pelo Centro Nacional de Folclore e Cultura Popular.Foi professor de ensino fundamental, médio e pré-vestibular no Rio de Janeiro entre 2007 e 2017.
 
 Pesquisador do Laboratório de Humanidades Digitais da UFBA. Membro do GT Nacional Emancipações e Pós-Abolição da Anpuh. Tem experiência na área de História Social da Cultura, Humanidades e História Digital, Abolição da escravidão e o Pós-Abolição no Brasil e no Caribe, atuando principalmente nos seguintes temas: Carnaval, Cidadania, História Transnacional, Diáspora Africana, História das Afro-Américas, Hemerotecas e arquivos digitais, métodos digitais de pesquisa, linguagem de programação para a pesquisa em História, web scraping. 
 
