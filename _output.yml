@@ -2,7 +2,11 @@ bookdown::gitbook:
   css: style.css
   config:
     toc:
-     download: null
+      before: |
+        <li><a href="./">Repositório da Humanidades Digitais (PT-BR)-</a></li>
+      after: |
+        <li><a href="https://labhdufba.github.io/redhbr/" target="blank">Feito com bookdown</a></li>
+    download: no
     sharing:
       facebook: no
       github: yes
