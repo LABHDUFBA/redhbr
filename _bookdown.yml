@@ -1,6 +1,0 @@
-output_dir: "docs"
-book_filename: "redhbr"
-delete_merged_file: True
-language:
-  ui:
-    
