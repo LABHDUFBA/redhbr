@@ -6,9 +6,9 @@ A [Associação Nacional de História, Anpuh](https://anpuh.org.br/index.php), f
 
 Desenvolvemos scripts diferentes para dois tipos de conjuntos de dados relacionados à Associação Nacional de História.
 
-- Anais-Anpuh: script para raspagem de todos os trabalhos publicados nos Anais dos Simpósio Nacionais de História entre 1963 e 2017, disponíveis no site da Anpuh.
+- [Anais-Anpuh](https://github.com/LABHDUFBA/Anais-Anpuh): script para raspagem de todos os trabalhos publicados nos Anais dos Simpósio Nacionais de História entre 1963 e 2017, disponíveis no site da Anpuh.
 
-- Resumos-anpuh CLI: é uma interface de linha de comando (CLI) escrita em Python com objetivo de raspar e organizar os Resumos dos Simpósios temáticos dos SNH dos anos de 2013, 2015, 2017, 2019 e 2021.
+- [Resumos-anpuh CLI](https://github.com/ericbrasiln/resumos-anpuh-cli/): é uma interface de linha de comando (CLI) escrita em Python com objetivo de raspar e organizar os Resumos dos Simpósios temáticos dos SNH dos anos de 2013, 2015, 2017, 2019 e 2021.
 
 ## Anais-Anpuh
 

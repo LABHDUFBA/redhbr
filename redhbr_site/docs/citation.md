@@ -5,7 +5,12 @@
 Abaixo a citação no formato BibTex:
 
 ```
-
+@misc{Nascimento_Repositorio_Digital_das_2021,
+author = {Nascimento, Leonardo and Brasil, Eric and Mussa, Vitor and Barreto, Tarssio and Mendes, Daniel  and Andrade, Gabriel},
+month = {4},
+title = {{Repositório Digital das Humanidades (PT-BR) - REDHBR}},
+year = {2021}
+}
 ```
 
 # Como citar ferramentas específicas?

@@ -4,7 +4,7 @@
 
 No ano de 2020, desenvolvemos uma ferramenta para raspagem da base de artigos do Scielo.br. A ferramenta, escrita em Python, utilizava a biblioteca `BeautifulSoup` para coletar os dados. Entretanto, em 2021 o repositório Scielo.br passou por uma reestruturação completa.
 
-Foi necessário, consequentemente, a reconstrução da ferramenta para lidar com a nova versão do site. Agora, utilizamos o `Selenium` para acessar e raspar os dados do repositório.
+Foi necessário, consequentemente, a reconstrução da ferramenta para lidar com a nova versão do site. Agora, utilizamos o `Selenium` para acessar e raspar os dados do repositório. O repositório da ferramenta no GitHub é [ferramentas_scielo_v2](https://github.com/LABHDUFBA/ferramentas_scielo_v2/).
 
 Com a `ferramentas_scielo_v2` é possível realizar a raspagem [por área do conhecimento](https://labhdufba.github.io/ferramentas_scielo_v2/#raspagem-por-area-de-conhecimento) ou [por revista (ou uma lista de revistas)](https://labhdufba.github.io/ferramentas_scielo_v2/#raspagem-por-revista-ou-por-lista-de-revistas). Também é possível optar pelo tipo de raspagem: apenas XML ou XML e PDFs.
 

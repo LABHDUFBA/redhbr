@@ -1,0 +1,19 @@
+Instalar mkdocs, tema e extensões:
+
+```
+pip install mkdocs
+pip install mkdocs-material
+pip install pymdown-extensions
+```
+
+Comandos do mkdocs. Devem ser executados do interior do diretório
+redhbr_site.
+
+# Para rodar o site localmente
+`mkdocs serve` 
+
+# para construir o site
+`mkdocs build`
+
+# Para fazer o deploy do site no branch gh-pages e publicá-lo automaticamente
+`mkdocs gh-deploy`
