@@ -1,0 +1,32 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: >-
+  Repositório Digital das Humanidades (PT-BR) -
+  REDHBR
+message: >-
+  Se você utilizar esse repositório, por favor cite
+  como   referenciado abaixo.
+type: dataset
+authors:
+  - given-names: Leonardo
+    family-names: Nascimento
+    affiliation: UFBA/ICTI/LABHDUFBA/PPGCS
+    orcid: 'https://orcid.org/0000-0003-2929-1115'
+  - given-names: Eric
+    family-names: Brasil
+    affiliation: IHLM/UNILAB
+    orcid: 'https://orcid.org/0000-0001-5067-8475'
+  - affiliation: DTA/PPGSA/UFRJ
+    family-names: Mussa
+    given-names: Vitor
+  - given-names: Tarssio
+    family-names: Barreto
+    affiliation: LABHDUFBA
+  - given-names: 'Daniel '
+    family-names: Mendes
+    affiliation: PATHS/UFRJ
+  - given-names: Gabriel
+    family-names: Andrade
+date-released: '2021-04-29'

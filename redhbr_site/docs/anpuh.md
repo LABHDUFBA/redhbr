@@ -70,13 +70,13 @@ Exemplo de como executar utilizando o terminal do Linux, após instalar o Python
 
 O script retorna para o usuário **todos os pdfs disponíveis em todas as páginas de todos os Simpósios Nacionais da Anpuh desde 1963 até 2017**. São criadas pastas com o número de cada evento para o armazenamento dos arquivos em PDF.
 
-<p align="center"><img src="https://github.com/ericbrasiln/Anais-Anpuh/blob/master/images/pastas.png"/></p>
+![pastas](img/pastas.png)
 
 É importante notar que muitos papers não estão com pdf disponível no site, assim como nas edições mais antigas encontramos arquivos que contém vários papers num único PDF.
 
 O script também gera um arquivo **CSV** (*comma-separated values*) contendo os seguintes valores para cada paper: Autor(es)/Instituições,Título, Tipo, Evento, Ano, Link do Arquivo. Esse arquivo pode ser aberto como uma planilha e trabalhado em banco de dados.
 
-![exemplo de csv](images/exemplo-csv.png)
+![exemplo de csv](img/ex_csv1.png)
 
 O script está funcionando perfeitamente. Qualquer alteração no site percebida pelos usuários ou sugestões de aprimoramento são bem vindas.
 
@@ -167,8 +167,6 @@ optional arguments:
   -o , --output         Nome do arquivo de saída no formato .csv. Se essa opção não for definida, o título do arquivo será `<AAAA-MM-DD_HH-MM-SS>.csv`
 ```
 
-![image](https://user-images.githubusercontent.com/58128421/130711906-cdb0ffea-fbd1-4699-885e-1e1bcf00ad9d.png)
-
 ---
 
 ### Resultados
@@ -183,7 +181,14 @@ Esse arquivo pode ser aberto como uma planilha e trabalhado em banco de dados.
 
 Contando o número de linhas e de linhas por ano, com pandas, temos o seguinte resultado:
 
-![image](https://user-images.githubusercontent.com/58128421/130712111-f8654c2c-0d81-4b65-89ba-b5e567f96fea.png)
+| Ano | Número de linhas |
+| :---: | :---: |
+| 2013 | 2678 |
+| 2015 | 2770 |
+| 2017 | 2802 |
+| 2019 | 3240 |
+| 2021 | 2728 |
+| Total | 14218 |
 
 ---
 

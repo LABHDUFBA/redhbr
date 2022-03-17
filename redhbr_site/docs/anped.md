@@ -67,11 +67,15 @@ O script também gera um arquivo **CSV** (*comma-separated values*) contendo os 
 
 O script está funcionando perfeitamente. Qualquer alteração no site percebida pelos usuários ou sugestões de aprimoramento são bem vindas.
 
+### Download dos dados
+
+[Se preferir baixar a planilha sem usar o código clique aqui](https://od.lk/d/ODRfNjA1NDgxNDZf/anais-anped-38-39-40_2022-03-09_12-57-55.csv).
+
 ### Citação
 
 Como citar essa ferramenta?
 
-É possível clicar em `Cite this repository` na aba à direita da página inicial do repositório no GitHub para acessar a citação nos formatos APA e BibTex, ou ainda acessar o [arquivo da citação](CITATION.cff) em formato .cff.
+É possível clicar em `Cite this repository` na aba à direita da página inicial do repositório no GitHub para acessar a citação nos formatos APA e BibTex, ou ainda acessar o [arquivo da citação](https://github.com/ericbrasiln/anais_anped/blob/main/CITATION.cff) em formato .cff.
 
 Abaixo a citação no formato BibTex:
 

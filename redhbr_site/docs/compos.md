@@ -51,7 +51,7 @@ O programa exporta, para cada edição do congresso, uma tabela no formato CSV c
 
 A imagem abaixo ilustra o formato de uma das tabelas:
 
-![](img\csv.png)
+![](img/csv.png)
 
 **Download**: [Se preferir baixar a base dos PDFs sem usar o código clique aqui.](https://filesender.rnp.br/?s=download&token=ae3e90f6-c8db-497f-a3e0-73958c634997)
 (**OBS:a nomeação ainda contém alguns pequenos erros que serão corrigidos em breve**)

@@ -46,7 +46,7 @@ O programa exporta, para cada edição do congresso, uma tabela no formato CSV c
 
 A imagem abaixo ilustra o formato de uma das tabelas:
 
-![](img\anpocs_scraper_csv.png)
+![](img/anpocs_scraper_csv.png)
 
 Caso você não queira rodar o raspador, mas precise dos dados, você pode obter [a versão atual do conjunto de dados exportado pelo programa aqui](https://drive.google.com/drive/folders/1XdHLf3b7r0d1EwwlYo4D0bRBujVILBq7?usp=sharing).
 
