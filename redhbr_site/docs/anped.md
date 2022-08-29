@@ -14,7 +14,9 @@ ___
 
 ### Instalação
 
-Para executar a ferramenta é preciso clonar ou fazer download do [repositório para sua máquina](https://github.com/ericbrasiln/anais_anped). Antes de executar os scripts, é preciso preparar seu computador, como mostramos abaixo.
+A ferramenta está disponível no GitHub, [nesse link](https://github.com/ericbrasiln/anais_anped).
+
+Para executar a ferramenta é preciso clonar ou fazer download do repositório para sua máquina. Antes de executar os scripts, é preciso preparar seu computador, como mostramos abaixo.
 
 A ferramentas desse projeto foram escritas em [Python 3.9.7](https://www.python.org/). Portanto, para executar o arquivo .py é preciso instalar o Python3 em seu computador.
 
