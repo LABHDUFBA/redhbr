@@ -1,16 +1,22 @@
 ## Ferramentas Scielo v2 
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5168728.svg)](https://doi.org/10.5281/zenodo.5168728) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7032159.svg)](https://doi.org/10.5281/zenodo.7032159) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
+
+Veja a documentação original em https://labhdufba.github.io/ferramentas_scielo_v2/
+
+---
 
 No ano de 2020, desenvolvemos uma ferramenta para raspagem da base de artigos do Scielo.br. A ferramenta, escrita em Python, utilizava a biblioteca `BeautifulSoup` para coletar os dados. Entretanto, em 2021 o repositório Scielo.br passou por uma reestruturação completa.
 
-Foi necessário, consequentemente, a reconstrução da ferramenta para lidar com a nova versão do site. Agora, utilizamos o `Selenium` para acessar e raspar os dados do repositório. O repositório da ferramenta no GitHub é [ferramentas_scielo_v2](https://github.com/LABHDUFBA/ferramentas_scielo_v2/).
+Foi necessário, consequentemente, a reconstrução da ferramenta para lidar com a nova versão do site. Agora, utilizamos o `Selenium` para acessar e raspar os dados do repositório.
 
 Com a `ferramentas_scielo_v2` é possível realizar a raspagem [por área do conhecimento](https://labhdufba.github.io/ferramentas_scielo_v2/#raspagem-por-area-de-conhecimento) ou [por revista (ou uma lista de revistas)](https://labhdufba.github.io/ferramentas_scielo_v2/#raspagem-por-revista-ou-por-lista-de-revistas). Também é possível optar pelo tipo de raspagem: apenas XML ou XML e PDFs.
 
 Também disponibilizamos uma ferramenta para converter os XMLs para CSV, com o script `scielo_xml_to_csv/run.py`.
 
 ### Instalação
+
+#### Pré-requisitos
 
 Para executar a ferramenta é preciso clonar ou fazer download do repositório para sua máquina. Antes de executar os scripts, é preciso preparar seu computador, como mostramos abaixo.
 
@@ -19,7 +25,7 @@ A ferramentas desse projeto foram escritas em [Python 3.8](https://www.python.or
 [Clique aqui](https://python.org.br/instalacao-windows/) para acessar um tutorial de instalação do Python no Windows, [clique aqui](https://python.org.br/instalacao-linux/) para Linux e [clique aqui](https://python.org.br/instalacao-mac/)
 para Mac.
 
-Após a instalação do Python é preciso instalar as bibliotecas necessárias para a ferramenta ser executada. Para isso, basta executar o comando `pip install -r requirements.txt` no terminal, a partir da pasta onde está o arquivo.  Para saber mais sobre instalação de bibliotecas com pip, veja essa lição do [Programming Historian](https://programminghistorian.org/pt/licoes/instalacao-modulos-python-pip).
+Após a instalação do Python é preciso instalar as bibliotecas necessárias para a ferramenta ser executada. Para isso, basta executar o comando `pip3 install -r requirements.txt` no terminal, a partir da pasta onde está o arquivo. Para saber mais sobre instalação de bibliotecas com pip, veja essa lição do [Programming Historian](https://programminghistorian.org/pt/licoes/instalacao-modulos-python-pip).
 
 1. Acesse o diretório em que o arquivo `requirements.txt` está salvo:
    ```{.sh .bash}
@@ -27,8 +33,16 @@ Após a instalação do Python é preciso instalar as bibliotecas necessárias p
    ```
 2. Instale as bibliotecas requeridas com o seguinte comando:
    ```{.python}
-   pip install -r requirements.txt
+   pip3 install -r requirements.txt
    ```
+
+##### WebDriver e Navegador
+
+Para que a ferramenta funcione, é necessário ter instalado o navegador [Mozilla Firefox](https://www.mozilla.org/pt-BR/firefox/new/). Além disso, é necessário ter instalado o WebDriver do Mozilla Firefox, GeckoDriver. 
+
+Para acessar a versão mais recente do GeckoDriver [visite o repositório do Mozilla no GitHub](https://github.com/mozilla/geckodriver/releases). É possível encontrar mais [informações oficiais aqui](https://firefox-source-docs.mozilla.org/testing/geckodriver/index.html).
+
+Para inserir o webdriver no PATH de sistemas Unix e Windows, leia essa questão no [StackOverflow](https://stackoverflow.com/questions/40208051/selenium-using-python-geckodriver-executable-needs-to-be-in-path/40208762#40208762).
 
 Agora é possível executar a ferramenta direto do prompt de comando do Windows ou pelo terminal do Linux, ou utilizar as diversas [IDE](https://pt.wikipedia.org/wiki/Ambiente_de_desenvolvimento_integrado) disponíveis.
 
@@ -43,7 +57,7 @@ Esse script permite ao usuário selecionar qual assunto pretende raspar de acord
 Para isso é preciso executar o seguinte comando, do interior da pasta onde o arquivo está localizado:
 
 ```{.sh}
-python scielo_v2.py
+python3 scielo_v2.py
 ```
 A seguinte mensagem será exibida:
 
@@ -141,24 +155,37 @@ Em seguida, com a função `df_final()`, todos os arquivos CSV são unidos em um
 
 Elementos presentes nesse repositório foram retirados de [Scielo_Journal_Metadata_Downoader](https://github.com/johnsgomez/Scielo_Journal_Metadata_Downoader), criado por [johnsgomez](https://github.com/johnsgomez)
 
-### Download dos dados
+#### Download dos dados
 
 [Se preferir baixar a base dos CSV de *Ciências Humanas* sem usar o código clique aqui](http://u.pc.cd/ba27). Esse arquivo zipado é formado pelos arquivos CSV das 91 revistas categorizada como Ciências Humanas pelo Scielo.br previamente raspados usando a ferramenta `scielo_scraper` em 22 de novembro de 2020. A execução do `scielo_xml_to_csv`aconteceu em 04/04/2021 e gerou esse arquivo zipado com todos os 91 CSVs de cada revista mais o CSV final, com todos os **72.552 itens** e possui **234.4 MB**.
 
-### Como citar essa ferramenta?
+---
+
+#### Como citar essa ferramenta?
 
 É possível clicar em `Cite this repository` na aba à direita da [página inicial do repositório no GitHub](https://github.com/LABHDUFBA/ferramentas_scielo_v2) para acessar a citação nos formatos APA e BibTex, ou ainda acessar o [arquivo da citação](https://github.com/LABHDUFBA/ferramentas_scielo_v2/blob/main/CITATION.cfff) em formato `.cff`.
 
 Abaixo a citação no formato BibTex:
 
-```{.bibtex}
-@software{Brasil_Ferramentas_Scielo_v2_2021,
-author = {Brasil, Eric and Nascimento, Leonardo and Andrade, Gabriel},
-doi = {10.5281/zenodo.5168727},
-month = {8},
-title = {{Ferramentas Scielo v2}},
-url = {https://github.com/LABHDUFBA/ferramentas_scielo_v2},
-version = {1.0.1},
-year = {2021}
+```
+@software{brasil_eric_2021_6336277,
+  author       = {Brasil, Eric and
+                  Nascimento, Leonardo and
+                  Andrade, Gabriel},
+  title        = {Ferramentas Scielo v2},
+  month        = aug,
+  year         = 2021,
+  note         = {{Se você utilizar esse programa, por favor cite 
+                   como referenciado abaixo.}},
+  publisher    = {Zenodo},
+  version      = {2.1},
+  doi          = {10.5281/zenodo.6336277},
+  url          = {https://doi.org/10.5281/zenodo.6336277}
 }
 ```
+
+### Licença 
+
+[MIT Licence](LICENSE)
+
+2021 [Eric Brasil (IHL/UNILAB, LABHDUFBA)](https://github.com/ericbrasiln), [Gabriel Andrade (UFBA, LABHDUFBA)](https://github.com/gabrielsandrade), [Leonardo Nascimento (UFBA, LABHDUFBA)](https://github.com/leofn)
