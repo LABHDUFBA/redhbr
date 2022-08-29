@@ -128,4 +128,14 @@ sh
 
 ---
 
+## As ferramentas
+
+Atualmente, diponibilizamos ferramentas para raspagem de dados de cinco bases de dados:
+
+1. [Anped - Associação Nacional de Pós-Graduação e Pesquisa em Educação](anped.md)
+2. [Anpocs - Associação Nacional de Pós-Graduação e Pesquisa em Ciências Sociais](anpocs.md)
+3. [Anpuh - Associação Nacional de História](anpuh.md)
+4. [Compos - Associação Nacional dos Programas de Pós-Graduação em Comunicação](compos.md)
+5. [Scielo.br - Scientific Electronic Library Online](scielo.md)
+
 **Navegue pelo menu de ferramentas à esquerda para acessar a documentação e os dados de cada uma delas.**
